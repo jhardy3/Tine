@@ -80,12 +80,7 @@
 		74A930FB1CA0AD1A0099DB81 = {
 			isa = PBXGroup;
 			children = (
-				74A932031CA1F6040099DB81 /* libc++.tbd */,
-				74A932011CA1F5FE0099DB81 /* libicucore.tbd */,
-				74A931FF1CA1F5F80099DB81 /* Security.framework */,
-				74A931FD1CA1F5F30099DB81 /* CFNetwork.framework */,
-				74A931FB1CA1F5EB0099DB81 /* SystemConfiguration.framework */,
-				74A931F91CA1F5D70099DB81 /* Firebase.framework */,
+				74A932051CA1F7F30099DB81 /* Firebase Framework */,
 				74A931061CA0AD1A0099DB81 /* Tine */,
 				74A931051CA0AD1A0099DB81 /* Products */,
 			);
@@ -146,6 +141,19 @@
 				74A931591CA1B10A0099DB81 /* Comment.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		74A932051CA1F7F30099DB81 /* Firebase Framework */ = {
+			isa = PBXGroup;
+			children = (
+				74A932031CA1F6040099DB81 /* libc++.tbd */,
+				74A932011CA1F5FE0099DB81 /* libicucore.tbd */,
+				74A931FF1CA1F5F80099DB81 /* Security.framework */,
+				74A931FD1CA1F5F30099DB81 /* CFNetwork.framework */,
+				74A931FB1CA1F5EB0099DB81 /* SystemConfiguration.framework */,
+				74A931F91CA1F5D70099DB81 /* Firebase.framework */,
+			);
+			name = "Firebase Framework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

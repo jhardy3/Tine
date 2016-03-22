@@ -7,3 +7,47 @@
 //
 
 import Foundation
+
+class Shed: FirebaseType {
+    
+    private let imageKey = "imageIdentifier"
+    private let hunterKey = "hunterKey"
+    private let messageIdKey = "messagesKey"
+    
+    var identifier: String?
+    
+    var imageIdentifier: String
+    var hunterIdentifier: String
+    var messageIdentifiers = [String]()
+    
+    let endpoint = "/shed/"
+    
+    var jsonValue : [String : AnyObject] {
+        var messageDic = [String : AnyObject]()
+        for message in messageIdentifiers {
+            messageDic.updateValue(true, forKey: message)
+        }
+        
+        return [
+            imageKey : imageIdentifier,
+            hunterKey : hunterIdentifier,
+            messageIdKey : messageDic
+        ]
+    }
+    
+    required init?(json: [String : AnyObject], identifier: String) {
+        guard let imageIdentifier = json[imageKey] as? String, hunterIdentifier = json[hunterKey] as? String else {
+            self.imageIdentifier = ""
+            self.hunterIdentifier = ""
+            self.messageIdentifiers = []
+            return nil
+        }
+        
+        self.imageIdentifier = imageIdentifier
+        self.hunterIdentifier = hunterIdentifier
+        if let messages = json[messageIdKey] as? [String : AnyObject] {
+            self.messageIdentifiers = Array(messages.keys)
+        }
+        self.identifier = identifier
+    }    
+}

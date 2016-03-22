@@ -14,8 +14,10 @@ import Firebase
 
 class FirebaseController {
     
+    static private let baseURL = "tineline.firebaseIO.com"
+    
     // Declare a static base variable for firebase communication
-    static let firebase = Firebase(url: "ios6weekchallenge.firebaseIO.com")
+    static let firebase = Firebase(url: baseURL)
     
     // Declare a static function that returns a single snapshot of data at a specific point in firebase data structure
     static func dataAtEndPoint(endpoint: String, completion: (data: AnyObject?) -> Void) {
