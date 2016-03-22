@@ -20,7 +20,7 @@ class Comment: FirebaseType {
     var hunterIdentifier: String
     var bodyText: String
     
-    let endpoint = "/Comment/"
+    let endpoint = "/comment/"
     
     var jsonValue : [String : AnyObject] {
         

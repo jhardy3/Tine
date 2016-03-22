@@ -23,15 +23,11 @@ class Shed: FirebaseType {
     let endpoint = "/shed/"
     
     var jsonValue : [String : AnyObject] {
-        var messageDic = [String : AnyObject]()
-        for message in messageIdentifiers {
-            messageDic.updateValue(true, forKey: message)
-        }
         
         return [
             imageKey : imageIdentifier,
             hunterKey : hunterIdentifier,
-            messageIdKey : messageDic
+            messageIdKey : messageIdentifiers.toDic()
         ]
     }
     
