@@ -46,5 +46,27 @@ class PhotoController {
         
     }
     
+    static func fetchImageAtURL(imageURLString: String, completion: (image: UIImage?) -> Void) {
+        
+        print(imageURLString)
+        if let url = NSURL(string: imageURLString) {
+            
+            NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+                
+                if let error = error {
+                    print(error.localizedDescription)
+                    completion(image: nil)
+                }
+                
+                if let data = data {
+                    let image = UIImage(data: data)
+                    completion(image: image)
+                }
+            })
+                .resume()
+        } else {
+            completion(image: nil)
+        }
+    }
     
 }

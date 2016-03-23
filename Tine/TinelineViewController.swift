@@ -15,13 +15,13 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let image = UIImage(named: "Shed")!
-        PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
-            print(url)
-        }
 
         // Do any additional setup after loading the view.
     }

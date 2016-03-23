@@ -45,21 +45,22 @@ class HunterController {
     
     // Authenticate a hunter logging in
     
-    static func authenticateHunter(email: String, password: String, completion: (hunter: Hunter?) -> Void) {
+    static func authenticateHunter(email: String, password: String, completion: (success: Bool) -> Void) {
         FirebaseController.firebase.authUser(email, password: password) { (error, authData) -> Void in
             if let error = error {
                 print(error)
-                completion(hunter: nil)
+                completion(success: false)
                 return
             }
             
-            guard let hunterID = authData.uid else { completion(hunter: nil) ; return }
+            guard let hunterID = authData.uid else { completion(success: false) ; return }
             // Fetch hunter right here
             fetchHunterForIdentifier(hunterID, completion: { (hunter) -> Void in
                 if let hunter = hunter {
-                    completion(hunter: hunter)
+                    completion(success: true)
+                    self.sharedInstance.currentHunter = hunter
                 } else {
-                    completion(hunter: nil)
+                    completion(success: false)
                 }
             })
         }

@@ -10,15 +10,25 @@ import UIKit
 
 class logInViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        if HunterController.sharedInstance.currentHunter == nil {
-            self.performSegueWithIdentifier("loggedIn", sender: self)
-        }
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if HunterController.sharedInstance.currentHunter != nil {
+            self.performSegueWithIdentifier("loggedIn", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +36,31 @@ class logInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signUpTapped(sender: UIButton) {
+        guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else { return }
+        HunterController.createHunter(username, email: email, password: password) { (success) -> Void in
+            if success {
+                self.performSegueWithIdentifier("loggedIn", sender: self)
+            }
+        }
+        
+        
+        
+    }
 
+    @IBAction func signInTapped(sender: UIButton) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        HunterController.authenticateHunter(email, password: password) { (success) -> Void in
+            if success {
+                self.performSegueWithIdentifier("loggedIn", sender: self)
+            }
+        }
+        
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

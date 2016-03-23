@@ -11,6 +11,7 @@
 		74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5A1CA229DB00EA09C7 /* AWSS3.framework */; };
 		74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5C1CA229F400EA09C7 /* AWSCore.framework */; };
 		74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */; };
+		74499A611CA307E300EA09C7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74499A601CA307E300EA09C7 /* LogInViewController.swift */; };
 		74A931081CA0AD1A0099DB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A931071CA0AD1A0099DB81 /* AppDelegate.swift */; };
 		74A9310D1CA0AD1A0099DB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A9310B1CA0AD1A0099DB81 /* Main.storyboard */; };
 		74A9310F1CA0AD1A0099DB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A9310E1CA0AD1A0099DB81 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		74499A5A1CA229DB00EA09C7 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
 		74499A5C1CA229F400EA09C7 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
 		74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.3.6/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
+		74499A601CA307E300EA09C7 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		74A931041CA0AD1A0099DB81 /* Tine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A931071CA0AD1A0099DB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A9310C1CA0AD1A0099DB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				74A931EB1CA1EF880099DB81 /* TinelineViewController.swift */,
 				74A931401CA19BDE0099DB81 /* ShedTableViewCell.swift */,
+				74499A601CA307E300EA09C7 /* LogInViewController.swift */,
 				74A9311B1CA0F95E0099DB81 /* ProfileViewController.swift */,
 				74A931461CA19C520099DB81 /* LeaderboardViewController.swift */,
 				74A931191CA0F9470099DB81 /* SearchTableViewController.swift */,
@@ -318,6 +321,7 @@
 				74A931471CA19C520099DB81 /* LeaderboardViewController.swift in Sources */,
 				74A931491CA19CBD0099DB81 /* Shed.swift in Sources */,
 				74A9315A1CA1B10A0099DB81 /* Comment.swift in Sources */,
+				74499A611CA307E300EA09C7 /* LogInViewController.swift in Sources */,
 				74A931EC1CA1EF880099DB81 /* TinelineViewController.swift in Sources */,
 				74A9314B1CA19CCE0099DB81 /* Hunter.swift in Sources */,
 				74A9314F1CA19DD90099DB81 /* HunterController.swift in Sources */,
