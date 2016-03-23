@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Shed: FirebaseType {
     
@@ -20,6 +21,7 @@ class Shed: FirebaseType {
     var imageIdentifier: String
     var hunterIdentifier: String
     var messageIdentifiers = [String]()
+    var shedImage: UIImage?
     
     let endpoint = "/shed/"
     
@@ -37,8 +39,10 @@ class Shed: FirebaseType {
             self.imageIdentifier = ""
             self.hunterIdentifier = ""
             self.messageIdentifiers = []
+            self.shedImage = nil
             return nil
         }
+        
         
         self.imageIdentifier = imageIdentifier
         self.hunterIdentifier = hunterIdentifier
@@ -46,11 +50,17 @@ class Shed: FirebaseType {
             self.messageIdentifiers = Array(messages.keys)
         }
         self.identifier = identifier
+        PhotoController.fetchImageAtURL(imageIdentifier) { (image) -> Void in
+            self.shedImage = image
+        }
     }
     
     // Class Initializer
     init(hunterID: String, imageID: String?) {
         self.hunterIdentifier = hunterID
         self.imageIdentifier = imageID ?? ""
+        PhotoController.fetchImageAtURL(imageIdentifier) { (image) -> Void in
+            self.shedImage = image
+        }
     }
 }

@@ -27,14 +27,11 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         
         
-        let image = UIImage(named: "Sheds")!
-        ShedController.createShed(image, hunterIdentifier: HunterController.sharedInstance.currentHunter!.identifier!) { (success) -> Void in
-            ShedController.fetchShedsForTineline { (sheds) -> Void in
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.sheds = sheds
-                    self.tableView.reloadData()
-                })
-            }
+        ShedController.fetchShedsForTineline { (sheds) -> Void in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.sheds = sheds
+                self.tableView.reloadData()
+            })
         }
         
         
@@ -54,10 +51,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
         
-        PhotoController.fetchImageAtURL(sheds[indexPath.row].imageIdentifier) { (image) -> Void in
-            cell.imageView?.image = image
-        }
-        
+        cell.shedImageView.image = sheds[indexPath.row].shedImage
         return cell
         
     }
