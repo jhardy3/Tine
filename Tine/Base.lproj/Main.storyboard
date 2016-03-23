@@ -259,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4A-UH-2xW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.5" y="1530"/>
+            <point key="canvasLocation" x="2494.5" y="1530"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="ltc-tt-37I">
@@ -789,11 +789,81 @@
                         <segue destination="Ooi-ix-0Xx" kind="relationship" relationship="viewControllers" id="T95-YY-CIF"/>
                         <segue destination="Wpm-n2-GyH" kind="relationship" relationship="viewControllers" id="a0S-2T-pYg"/>
                         <segue destination="vfX-6N-c0q" kind="relationship" relationship="viewControllers" id="rNW-Qk-kr6"/>
+                        <segue destination="iBD-Ah-ycj" kind="relationship" relationship="viewControllers" id="AOb-ur-qGk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcQ-JI-tIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="862.5" y="340.5"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="udY-Ni-pgY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RL8-13-h2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="dVG-Ew-X5O" customClass="CameraViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="620-6n-Byl"/>
+                        <viewControllerLayoutGuide type="bottom" id="9uF-be-iWc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ym6-hl-40f">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-2f-bD0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBf-9h-t8b">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Post!"/>
+                                <connections>
+                                    <action selector="postButtonTapped:" destination="dVG-Ew-X5O" eventType="touchUpInside" id="LJQ-Yf-uww"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q1L-2f-bD0" firstAttribute="centerY" secondItem="Ym6-hl-40f" secondAttribute="centerY" id="7Xv-Wz-xZv"/>
+                            <constraint firstItem="Q1L-2f-bD0" firstAttribute="leading" secondItem="Ym6-hl-40f" secondAttribute="leading" id="DqC-aU-yvz"/>
+                            <constraint firstItem="Q1L-2f-bD0" firstAttribute="top" secondItem="620-6n-Byl" secondAttribute="bottom" constant="136" id="QUt-yc-DK4"/>
+                            <constraint firstItem="rBf-9h-t8b" firstAttribute="centerX" secondItem="Q1L-2f-bD0" secondAttribute="centerX" id="YYI-5G-wzY"/>
+                            <constraint firstItem="rBf-9h-t8b" firstAttribute="top" secondItem="Q1L-2f-bD0" secondAttribute="bottom" constant="58" id="kmo-in-7Kj"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1L-2f-bD0" secondAttribute="trailing" id="lq6-fl-kBn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Q1L-2f-bD0"/>
+                                <exclude reference="rBf-9h-t8b"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Xv-Wz-xZv"/>
+                                <exclude reference="DqC-aU-yvz"/>
+                                <exclude reference="QUt-yc-DK4"/>
+                                <exclude reference="lq6-fl-kBn"/>
+                                <exclude reference="YYI-5G-wzY"/>
+                                <exclude reference="kmo-in-7Kj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Q1L-2f-bD0"/>
+                                <include reference="rBf-9h-t8b"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Xv-Wz-xZv"/>
+                                <include reference="DqC-aU-yvz"/>
+                                <include reference="QUt-yc-DK4"/>
+                                <include reference="lq6-fl-kBn"/>
+                                <include reference="YYI-5G-wzY"/>
+                                <include reference="kmo-in-7Kj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Efs-A1-2f3"/>
+                    <connections>
+                        <outlet property="shedImageView" destination="Q1L-2f-bD0" id="npA-Ht-qsh"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="916.5" y="1530"/>
         </scene>
         <!--Tineline-->
         <scene sceneID="dFG-2v-ymq">
@@ -812,7 +882,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5VL-LH-37U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="1530"/>
+            <point key="canvasLocation" x="1683" y="1530"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="JRM-ee-0Qs">
@@ -888,6 +958,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="br1-cE-wZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1081.5" y="340.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="djj-vi-wt0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBD-Ah-ycj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lch-cJ-srG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXf-bZ-g00">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dVG-Ew-X5O" kind="relationship" relationship="rootViewController" id="v5K-QS-DoL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nsc-hp-akv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1.5" y="1530"/>
         </scene>
     </scenes>
     <resources>

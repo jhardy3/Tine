@@ -12,6 +12,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // shedCell
     
+    static let sharedInstance = TinelineViewController()
+    
     var sheds = [Shed]()
     
     @IBOutlet weak var segmentedController: UISegmentedControl!
@@ -20,13 +22,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
         ShedController.fetchShedsForTineline { (sheds) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.sheds = sheds
@@ -34,24 +29,20 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
             })
         }
         
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
         
-        cell.shedImageView.image = sheds[indexPath.row].shedImage
+        cell.updateWith(sheds[indexPath.row])
         return cell
         
     }

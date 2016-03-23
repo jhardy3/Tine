@@ -25,9 +25,13 @@ class ShedTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func updateWith(image: UIImage, usernameString: String) {
-        self.usernameTextField.text = usernameString
-        self.shedImageView.image = image
+    func updateWith(shed: Shed) {
+        
+        if let shedImage = shed.shedImage {
+            self.shedImageView.image = shedImage
+        }
+        self.usernameTextField.text = shed.hunterIdentifier
+       
     }
     
     
