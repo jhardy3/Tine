@@ -67,6 +67,13 @@ class HunterController {
     
     // Unauthenticate a hunter logging out
     
+    static func unauthHunter() {
+        guard var hunter = self.sharedInstance.currentHunter else { return }
+        hunter.save()
+        FirebaseController.firebase.unauth()
+        self.sharedInstance.currentHunter = nil
+    }
+    
     // MARK: - Fetch Requests
     
     // Grab a single hunter from firebase using an identifier
