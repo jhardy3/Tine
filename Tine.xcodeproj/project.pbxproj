@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29F64B0D91EDDAEB13585C95 /* Pods_Tine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5382D3464BEC6E1E5252E43F /* Pods_Tine.framework */; };
+		74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5A1CA229DB00EA09C7 /* AWSS3.framework */; };
+		74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5C1CA229F400EA09C7 /* AWSCore.framework */; };
+		74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */; };
 		74A931081CA0AD1A0099DB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A931071CA0AD1A0099DB81 /* AppDelegate.swift */; };
 		74A9310D1CA0AD1A0099DB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A9310B1CA0AD1A0099DB81 /* Main.storyboard */; };
 		74A9310F1CA0AD1A0099DB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A9310E1CA0AD1A0099DB81 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5382D3464BEC6E1E5252E43F /* Pods_Tine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74499A5A1CA229DB00EA09C7 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
+		74499A5C1CA229F400EA09C7 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
+		74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.3.6/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
 		74A931041CA0AD1A0099DB81 /* Tine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A931071CA0AD1A0099DB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74A9310C1CA0AD1A0099DB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +66,8 @@
 		74A931FF1CA1F5F80099DB81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		74A932011CA1F5FE0099DB81 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		74A932031CA1F6040099DB81 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A8F52E28030C61D6B0623A03 /* Pods-Tine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tine/Pods-Tine.release.xcconfig"; sourceTree = "<group>"; };
+		F3FD73A80B61E0266CC16CF0 /* Pods-Tine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tine/Pods-Tine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,24 +75,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */,
 				74A932041CA1F6040099DB81 /* libc++.tbd in Frameworks */,
 				74A932021CA1F5FE0099DB81 /* libicucore.tbd in Frameworks */,
 				74A932001CA1F5F80099DB81 /* Security.framework in Frameworks */,
 				74A931FE1CA1F5F30099DB81 /* CFNetwork.framework in Frameworks */,
 				74A931FC1CA1F5EB0099DB81 /* SystemConfiguration.framework in Frameworks */,
 				74A931FA1CA1F5D70099DB81 /* Firebase.framework in Frameworks */,
+				74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */,
+				74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */,
+				29F64B0D91EDDAEB13585C95 /* Pods_Tine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0229547BA621A37D52549DA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD73A80B61E0266CC16CF0 /* Pods-Tine.debug.xcconfig */,
+				A8F52E28030C61D6B0623A03 /* Pods-Tine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B098F29E75FCD3A6FD8924F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */,
+				74499A5C1CA229F400EA09C7 /* AWSCore.framework */,
+				74499A5A1CA229DB00EA09C7 /* AWSS3.framework */,
+				5382D3464BEC6E1E5252E43F /* Pods_Tine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74A930FB1CA0AD1A0099DB81 = {
 			isa = PBXGroup;
 			children = (
 				74A932051CA1F7F30099DB81 /* Firebase Framework */,
 				74A931061CA0AD1A0099DB81 /* Tine */,
 				74A931051CA0AD1A0099DB81 /* Products */,
+				0229547BA621A37D52549DA5 /* Pods */,
+				6B098F29E75FCD3A6FD8924F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74A931161CA0AD1A0099DB81 /* Build configuration list for PBXNativeTarget "Tine" */;
 			buildPhases = (
+				B1475EEA2C71822DD9ED7F63 /* Check Pods Manifest.lock */,
 				74A931001CA0AD1A0099DB81 /* Sources */,
 				74A931011CA0AD1A0099DB81 /* Frameworks */,
 				74A931021CA0AD1A0099DB81 /* Resources */,
+				EC4E7E31A58CFDD737B3133C /* Embed Pods Frameworks */,
+				A293BA02729A9A75F6F85CC3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +260,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A293BA02729A9A75F6F85CC3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tine/Pods-Tine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1475EEA2C71822DD9ED7F63 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4E7E31A58CFDD737B3133C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tine/Pods-Tine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74A931001CA0AD1A0099DB81 /* Sources */ = {
@@ -351,6 +438,7 @@
 		};
 		74A931171CA0AD1A0099DB81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FD73A80B61E0266CC16CF0 /* Pods-Tine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -367,6 +455,7 @@
 		};
 		74A931181CA0AD1A0099DB81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F52E28030C61D6B0623A03 /* Pods-Tine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import AWSS3
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let cognitoAccountId = "xxxxxxxxxxxxxxxxx"
+    let cognitoIdentityPoolId = "us-east-1:3303f181-9b28-44fa-8b15-0ef1b7bd726a"
+    let cognitoUnauthRoleArn = "arn:aws:iam::649642785004:role/Cognito_tineappUnauth_Role"
+    let cognitoAuthRoleArn = "arn:aws:iam::649642785004:role/Cognito_tineappAuth_Role"
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: AWSRegionType.USEast1, identityPoolId: cognitoIdentityPoolId)
+        let defaultServiceConfiguration = AWSServiceConfiguration(
+            region: AWSRegionType.USEast1,
+            credentialsProvider: credentialsProvider)
+        AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
+
+        
         return true
     }
 
