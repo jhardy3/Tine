@@ -10,6 +10,7 @@ import Foundation
 
 class Hunter: FirebaseType {
     
+    // Firebase JSON keys
     private let profileImageKey = "imageIdentifier"
     private let shedIDsKey = "shedIDsKey"
     private let trackingIDsKey = "trackingIDsKey"
@@ -20,7 +21,14 @@ class Hunter: FirebaseType {
     private let whiteCountKey = "whiteCountKey"
     private let chalkCountKey = "chalkCountKey"
     
+    // class specific variables
+    var username: String
+    var shedCount: Int
+    var brownCount: Int
+    var whiteCount: Int
+    var chalkCount: Int
     
+    // Firebase type Identifiers
     var identifier: String?
     
     var shedIDs = [String]()
@@ -28,13 +36,7 @@ class Hunter: FirebaseType {
     var trackedIDs = [String]()
     
     var profileImageIdentifier: String
-    var username: String
-    
-    var shedCount: Int
-    var brownCount: Int
-    var whiteCount: Int
-    var chalkCount: Int
-    
+
     let endpoint = "/hunter/"
     
     var jsonValue : [String : AnyObject] {
@@ -52,6 +54,7 @@ class Hunter: FirebaseType {
         
     }
     
+    // Firebasetype required init
     required init?(json: [String : AnyObject], identifier: String) {
         
         guard let username = json[usernameKey] as? String else {
@@ -84,6 +87,17 @@ class Hunter: FirebaseType {
         if let tracked = json[trackedIDsKey] as? [String : AnyObject] {
             self.trackedIDs = Array(tracked.keys)
         }
+    }
+    
+    // Class init
+    init(username: String, identifier: String?) {
+        self.username = username
+        self.shedCount = 0
+        self.brownCount = 0
+        self.whiteCount = 0
+        self.chalkCount = 0
+        self.profileImageIdentifier = "No Image yet"
+        self.identifier = identifier ?? nil
     }
 }
 

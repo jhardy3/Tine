@@ -10,15 +10,19 @@ import Foundation
 
 class Comment: FirebaseType {
     
+    // Firebase JSON keys
     private let imageKey = "imageIdentifier"
     private let hunterKey = "hunterKey"
     private let bodyTextKey = "bodyTextKey"
     
+    // Class specific properties
+    var bodyText: String
+    
+    // Firebase Type Identifiers
     var identifier: String?
     
     var imageIdentifier: String
     var hunterIdentifier: String
-    var bodyText: String
     
     let endpoint = "/comment/"
     
@@ -31,6 +35,7 @@ class Comment: FirebaseType {
         ]
     }
     
+    // Firebasetype required init
     required init?(json: [String : AnyObject], identifier: String) {
         guard let imageIdentifier = json[imageKey] as? String, hunterIdentifier = json[hunterKey] as? String, let bodyText = json[bodyTextKey] as? String else {
             self.imageIdentifier = ""
@@ -42,6 +47,13 @@ class Comment: FirebaseType {
         self.imageIdentifier = imageIdentifier
         self.hunterIdentifier = hunterIdentifier
         self.bodyText = bodyText
+    }
+    
+    // Class init
+    init(bodyText: String, imageIdentifier: String, hunterIdentifier: String) {
+        self.bodyText = bodyText
+        self.imageIdentifier = imageIdentifier
+        self.hunterIdentifier = hunterIdentifier
     }
     
 }
