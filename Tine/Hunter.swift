@@ -36,7 +36,7 @@ class Hunter: FirebaseType {
     var trackedIDs = [String]()
     
     var profileImageIdentifier: String
-
+    
     let endpoint = "/hunter/"
     
     var jsonValue : [String : AnyObject] {
@@ -110,5 +110,14 @@ extension Array {
             dicToReturn.updateValue(true, forKey: String(item))
         }
         return dicToReturn
+    }
+    
+    
+    mutating func deleteItem(item: Element) {
+        for index in 0..<self.count {
+            if String(self[index]) == String(item) {
+                self.removeAtIndex(index)
+            }
+        }
     }
 }

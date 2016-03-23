@@ -17,6 +17,11 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let image = UIImage(named: "Shed")!
+        PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
+            print(url)
+        }
 
         // Do any additional setup after loading the view.
     }

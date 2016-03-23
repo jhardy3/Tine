@@ -113,12 +113,6 @@ class HunterController {
         
     }
     
-    
-    
-    
-    
-    
-    
     // MARK: - Modify hunter
     
     // Saves existing hunter / overwrites existing hunter with updated hunter

@@ -48,10 +48,20 @@ class ShedController {
     
     // fetch posts in 50 mile radius (observe)
     
-    // fetch post based on user identifier
+    // fetch post based on identifier
+    static func fetchShed(identifier: String, completion:(shed: Shed?) -> Void) {
+        FirebaseController.dataAtEndPoint(identifier) { (data) -> Void in
+            guard let shedJson = data as? [String : AnyObject] else { completion(shed: nil) ; return }
+            if let shed = Shed(json: shedJson, identifier: identifier) {
+                completion(shed: shed)
+            } else {
+                completion(shed: nil)
+            }
+        }
+    }
     
     // fetch posts based on users tracking list (observe)
-    static func fetchPosts(completion:(shedIDs: [String]) -> Void) {
+    static func fetchSheds(completion:(shedIDs: [String]) -> Void) {
         
         var postsIDs = [String]()
         let group = dispatch_group_create()
@@ -93,11 +103,34 @@ class ShedController {
     }
     
     // delete comment
-    static func deleteComment(comment: Comment) {
-        comment.delete()
+    static func deleteComment(comment: Comment, shedID: String) {
+        guard let commentID = comment.identifier else { return }
+        fetchShed(shedID) { (shed) -> Void in
+            guard let shed = shed else { return }
+            for index in 0..<shed.messageIdentifiers.count {
+                if shed.messageIdentifiers[index] == commentID {
+                    shed.messageIdentifiers.removeAtIndex(index)
+                    comment.delete()
+                    return
+                }
+            }
+        }
     }
     
     // retrieve comments
+    static func fetchComments(commentIDs: [String], completion: (comments : [Comment]) -> Void) {
+        var commentArray = [Comment]()
+        for commentID in commentIDs {
+            FirebaseController.dataAtEndPoint("/comment/\(commentID)", completion: { (data) -> Void in
+                guard let commentJSON = data as? [String : AnyObject] else { completion(comments: []) ; return }
+                if let comment = Comment(json: commentJSON, identifier: commentID) {
+                    commentArray.append(comment)
+                }
+            })
+        }
+        
+        completion(comments: commentArray)
+    }
     
     // MARK: - Post specific alterations
     

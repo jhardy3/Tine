@@ -14,7 +14,6 @@ import Firebase
 class PhotoController {
     
     static let sharedInstance = PhotoController()
-    let baseRef = Firebase(url:"tineline.firebaseIO.com")
     let AWSUrl = "http://s3.amazonaws.com"
     
     func uploadImageToS3(image:UIImage, completion:(String?)->()) {
@@ -34,12 +33,12 @@ class PhotoController {
         
         task.continueWithBlock { (task) -> AnyObject! in
             if task.error != nil {
-                print("\(self.AWSUrl)/tine/\(fileName)")
+                print("\(self.AWSUrl)/tine-bucket/\(fileName)")
                 completion(nil)
                 print("Error uploading picture to AWS: \(task.error)")
             } else {
-                print("\(self.AWSUrl)/tine/\(fileName)")
-                completion("\(self.AWSUrl)/tine/\(fileName)")
+                print("\(self.AWSUrl)/tine-bucket/\(fileName)")
+                completion("\(self.AWSUrl)/tine-bucket/\(fileName)")
                 print("Upload successful")
             }
             return nil
