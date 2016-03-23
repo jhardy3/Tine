@@ -16,14 +16,15 @@ class ShedController {
     
     // Create new post
     
-    static func createShed(bodyText: String, image: UIImage, hunterIdentifier: String, completion: (success: Bool) -> Void) {
-        guard let currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false) ; return }
+    static func createShed(image: UIImage, hunterIdentifier: String, completion: (success: Bool) -> Void) {
+        guard var currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false) ; return }
         PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
             if let url = url {
-                var comment = Comment(bodyText: bodyText, imageIdentifier: url, hunterIdentifier: hunterIdentifier)
-                comment.save()
-                guard let commentID = comment.identifier else { completion(success: false) ; return }
-                currentHunter.shedIDs.append(commentID)
+                var shed = Shed(hunterID: hunterIdentifier, imageID: url)
+                shed.save()
+                guard let shedID = shed.identifier else { completion(success: false) ; return }
+                currentHunter.shedIDs.append(shedID)
+                currentHunter.save()
                 completion(success: true)
             } else {
                 completion(success: false)
@@ -50,7 +51,7 @@ class ShedController {
     
     // fetch post based on identifier
     static func fetchShed(identifier: String, completion:(shed: Shed?) -> Void) {
-        FirebaseController.dataAtEndPoint(identifier) { (data) -> Void in
+        FirebaseController.dataAtEndPoint("/shed/\(identifier)") { (data) -> Void in
             guard let shedJson = data as? [String : AnyObject] else { completion(shed: nil) ; return }
             if let shed = Shed(json: shedJson, identifier: identifier) {
                 completion(shed: shed)
@@ -86,6 +87,51 @@ class ShedController {
         
     }
     
+    // Fetch Sheds for Timeline
+    static func fetchShedsForTineline(completion:(sheds: [Shed]) -> Void) {
+        
+        var sheds = [String]()
+        var shedsToDisplay = [Shed]()
+        
+        let groupOne = dispatch_group_create()
+        
+        dispatch_group_enter(groupOne)
+        ShedController.fetchSheds { (shedIDs) -> Void in
+            sheds = shedIDs
+            dispatch_group_leave(groupOne)
+        }
+        
+        
+        dispatch_group_notify(groupOne, dispatch_get_main_queue()) { () -> Void in
+            
+            guard let currentHunter = HunterController.sharedInstance.currentHunter else { return }
+            sheds.appendContentsOf(currentHunter.shedIDs)
+            
+            let groupTwo = dispatch_group_create()
+            
+            
+            for index in 0..<sheds.count {
+                dispatch_group_enter(groupTwo)
+                if index <= 15 {
+                    ShedController.fetchShed(sheds[index], completion: { (shed) -> Void in
+                        if let shed = shed {
+                            shedsToDisplay.append(shed)
+                        }
+                        dispatch_group_leave(groupTwo)
+                    })
+                } else {
+                    dispatch_group_leave(groupTwo)
+                }
+            }
+            
+            dispatch_group_notify(groupTwo, dispatch_get_main_queue(), { () -> Void in
+                completion(sheds: shedsToDisplay)
+            })
+        }
+    }
+
+    
+
     // MARK: - Comment Functionality
     
     // add comment
