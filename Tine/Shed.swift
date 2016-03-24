@@ -65,9 +65,7 @@ class Shed: FirebaseType {
         self.hunterIdentifier = hunterID
         self.imageIdentifier = imageID ?? ""
         self.username = username
-        
-        PhotoController.fetchImageAtURL(imageIdentifier) { (image) -> Void in
-            self.shedImage = image
-        }
     }
 }
+
+

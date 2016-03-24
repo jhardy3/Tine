@@ -22,6 +22,9 @@ class ImageCollectionViewCell: UICollectionViewCell {
     func updateWith(shed: Shed) {
         if let shedImage = shed.shedImage {
             self.shedImage.image = shedImage
+        } else {
+            shedImage.downloadImageFrom(link: shed.imageIdentifier, contentMode: .ScaleAspectFit)
+            shed.shedImage = shedImage.image
         }
     }
     

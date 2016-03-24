@@ -44,8 +44,9 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
-        
+
         cell.updateWith(sheds[indexPath.row])
+        cell.delegate = self
         return cell
         
     }
