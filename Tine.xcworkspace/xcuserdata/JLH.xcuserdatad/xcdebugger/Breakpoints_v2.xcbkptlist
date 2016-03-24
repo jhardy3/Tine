@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tine/ProfileViewController.swift"
-            timestampString = "480542211.369314"
+            timestampString = "480544902.271889"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "collectionView(_:cellForItemAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>

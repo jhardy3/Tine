@@ -15,15 +15,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     // Hunter for profile View
     var hunter: Hunter?
     var sheds =  [Shed]()
+    let kMargin = CGFloat(0.0)
     
     // MARK: - IBOutlet Properties
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     // is Following Bool checks for following status based on button title text
     var isFollowing: Bool {
         get {
-            if followButton.titleLabel?.text == "track" {
+            if followButton.titleLabel?.text == "Track" {
                 return false
             } else {
                 return true
@@ -35,12 +38,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
+        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = 0
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
     }
+    
+    // MARK: - Collection View
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
@@ -89,6 +98,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             // If hunter is prevalent set hunter property to retrieved hunter
             if let hunter = hunter {
                 self.hunter = hunter
+                self.usernameLabel.text = hunter.username
                 print("Hunter Received")
             }
             dispatch_group_leave(groupNew)
@@ -102,7 +112,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 if hunterTrackIDs.contains(hunterID) {
                     self.followButton.setTitle("Untrack", forState: .Normal)
                 } else {
-                    self.followButton.setTitle("track", forState: .Normal)
+                    self.followButton.setTitle("Track", forState: .Normal)
                 }
                 
                 // If viewing own profile, sets follow button to hidden
@@ -141,5 +151,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             }
         }
     }
+    
+}
+
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        var collectionViewSize = collectionView.frame.size
+        
+        
+        
+        return CGSizeMake(collectionViewSize.width / 3.0, collectionViewSize.width / 3.0)
+    }
+    
     
 }

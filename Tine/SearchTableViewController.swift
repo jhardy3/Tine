@@ -170,17 +170,17 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
             
             if let indexPath = tableView.indexPathForCell(cell) {
                 
-                let hunter = usersDataSource[indexPath.row]
+                guard let hunterID = usersDataSource[indexPath.row].identifier else { return }
                 
                 let destinationViewController = segue.destinationViewController as? ProfileViewController
-                destinationViewController?.hunter = hunter
+                destinationViewController?.updateWithIdentifier(hunterID)
                 
             } else if let indexPath = (searchController.searchResultsController as? SearchResultsTableViewController)?.tableView.indexPathForCell(cell) {
                 
-                let hunter = (searchController.searchResultsController as! SearchResultsTableViewController).usersResultsDataSource[indexPath.row]
+                guard let hunterID = (searchController.searchResultsController as! SearchResultsTableViewController).usersResultsDataSource[indexPath.row].identifier else { return }
                 
                 let destinationViewController = segue.destinationViewController as? ProfileViewController
-                destinationViewController?.hunter = hunter
+                destinationViewController?.updateWithIdentifier(hunterID)
             }
         }
     }
