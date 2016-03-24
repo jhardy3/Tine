@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		29F64B0D91EDDAEB13585C95 /* Pods_Tine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5382D3464BEC6E1E5252E43F /* Pods_Tine.framework */; };
 		742BC7E71CA4790300F12D1E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BC7E61CA4790300F12D1E /* ImageCollectionViewCell.swift */; };
+		742BC7E91CA48DC900F12D1E /* ImageUitilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BC7E81CA48DC900F12D1E /* ImageUitilies.swift */; };
 		74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5A1CA229DB00EA09C7 /* AWSS3.framework */; };
 		74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5C1CA229F400EA09C7 /* AWSCore.framework */; };
 		74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		5382D3464BEC6E1E5252E43F /* Pods_Tine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		742BC7E61CA4790300F12D1E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		742BC7E81CA48DC900F12D1E /* ImageUitilies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUitilies.swift; sourceTree = "<group>"; };
 		74499A5A1CA229DB00EA09C7 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
 		74499A5C1CA229F400EA09C7 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
 		74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.3.6/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				74A931501CA19DE20099DB81 /* ShedController.swift */,
 				74A931521CA19DF10099DB81 /* LocationController.swift */,
 				74A931541CA19E000099DB81 /* PhotoController.swift */,
+				742BC7E81CA48DC900F12D1E /* ImageUitilies.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				74A931551CA19E000099DB81 /* PhotoController.swift in Sources */,
 				74499A631CA338A400EA09C7 /* CameraViewController.swift in Sources */,
 				74A931081CA0AD1A0099DB81 /* AppDelegate.swift in Sources */,
+				742BC7E91CA48DC900F12D1E /* ImageUitilies.swift in Sources */,
 				74A931511CA19DE20099DB81 /* ShedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

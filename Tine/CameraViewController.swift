@@ -75,10 +75,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Check for valid picture
         guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
-        
+        let squareImage = ImageUitilies.cropToSquare(image: image)
         // If valid display image and set image to new image
-        self.image = image
-        self.shedImageView.image = image
+        self.image = squareImage
+        self.shedImageView.image = squareImage
         
         // Dismiss camera view controller
         self.dismissViewControllerAnimated(true, completion: nil)

@@ -27,7 +27,7 @@ class ShedController {
             if let url = url {
                 
                 // If URL is present instantiate a Shed and save it.
-                var shed = Shed(hunterID: hunterIdentifier, imageID: url)
+                var shed = Shed(hunterID: hunterIdentifier, imageID: url, username: currentHunter.username)
                 shed.save()
                 
                 // Check for obviously present identifier

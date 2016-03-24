@@ -70,8 +70,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         refreshControl.endRefreshing()
     }
     
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toProfile" {
             

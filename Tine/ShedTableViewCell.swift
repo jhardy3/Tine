@@ -23,6 +23,12 @@ class ShedTableViewCell: UITableViewCell {
 
     // MARK: - UI Updating Functions
     
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.shedImageView.image = nil
+    }
+    
     // Update View with passed in shed
     func updateWith(shed: Shed) {
         
@@ -32,6 +38,6 @@ class ShedTableViewCell: UITableViewCell {
         }
         
         // Set usernameTextField text to passed in shed username
-        self.usernameTextField.text = shed.hunterIdentifier
+        self.usernameTextField.text = shed.username
     }
 }
