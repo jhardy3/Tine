@@ -21,16 +21,21 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
             case Hunters:
                 guard let tracking = HunterController.sharedInstance.currentHunter?.trackingIDs else { completion(hunters: []) ; return }
                 HunterController.fetchHuntersWithIdentifierArray(tracking, completion: { (hunters) -> Void in
-                                        completion(hunters: hunters)
+                    completion(hunters: hunters)
                 })
-            
+                
             case AddHunter:
                 HunterController.fetchAllHunters({ (var hunters) -> Void in
+                    var indexOfRemoval: Int?
                     for index in 0..<hunters.count {
                         if HunterController.sharedInstance.currentHunter!.identifier! == hunters[index].identifier! {
-                            hunters.removeAtIndex(index)
+                            indexOfRemoval = index
                         }
-                    }                    
+                    }
+                    if let indexOfRemoval = indexOfRemoval {
+                        hunters.removeAtIndex(indexOfRemoval)
+                    }
+
                     completion(hunters: hunters)
                 })
             }
@@ -81,11 +86,11 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("searchCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("searchCell", forIndexPath: indexPath)
         
-    cell.textLabel?.text = usersDataSource[indexPath.row].username
+        cell.textLabel?.text = usersDataSource[indexPath.row].username
         
-    return cell
+        return cell
     }
     
     
@@ -183,6 +188,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
             }
         }
     }
-
+    
     
 }

@@ -35,11 +35,19 @@ class ShedController {
     // Delete post
     static func deleteShed(shed : Shed) {
         guard let currentHunter = HunterController.sharedInstance.currentHunter, shedID = shed.identifier else { return }
+        
+        var indexOfRemoval: Int?
+        
         for index in 0..<currentHunter.shedIDs.count {
             if currentHunter.shedIDs[index] == shedID {
-                currentHunter.shedIDs.removeAtIndex(index)
+                indexOfRemoval = index
             }
         }
+        
+        if let indexOfRemoval = indexOfRemoval {
+            currentHunter.shedIDs.removeAtIndex(indexOfRemoval)
+        }
+        
         shed.delete()
     }
     
@@ -110,7 +118,7 @@ class ShedController {
             
             for index in 0..<sheds.count {
                 dispatch_group_enter(groupTwo)
-                if index <= 7 {
+                if index <= 30 {
                     ShedController.fetchShed(sheds[index], completion: { (shed) -> Void in
                         if let shed = shed {
                             shedsToDisplay.append(shed)
@@ -149,12 +157,17 @@ class ShedController {
         guard let commentID = comment.identifier else { return }
         fetchShed(shedID) { (shed) -> Void in
             guard let shed = shed else { return }
+            
+            var indexOfRemoval: Int?
             for index in 0..<shed.messageIdentifiers.count {
                 if shed.messageIdentifiers[index] == commentID {
-                    shed.messageIdentifiers.removeAtIndex(index)
-                    comment.delete()
+                    indexOfRemoval = index
                     return
                 }
+            }
+            if let indexOfRemoval = indexOfRemoval {
+                shed.messageIdentifiers.removeAtIndex(indexOfRemoval)
+                comment.delete()
             }
         }
     }
