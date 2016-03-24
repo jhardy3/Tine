@@ -347,25 +347,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dr-Fv-rA7">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3dr-Fv-rA7" secondAttribute="height" multiplier="7:6" id="sqL-8Q-5JQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="sqL-8Q-5JQ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="sqL-8Q-5JQ"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmZ-UC-m6S">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
@@ -453,6 +434,25 @@
                                     <outlet property="delegate" destination="fkd-a4-Gbf" id="sea-jS-b4m"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dr-Fv-rA7">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3dr-Fv-rA7" secondAttribute="height" multiplier="7:6" id="sqL-8Q-5JQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sqL-8Q-5JQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sqL-8Q-5JQ"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -494,12 +494,12 @@
                                 <exclude reference="IiW-fN-iYx"/>
                                 <exclude reference="KY7-rL-S8i"/>
                                 <exclude reference="wjB-6q-EKU"/>
-                                <exclude reference="3dr-Fv-rA7"/>
                                 <exclude reference="xmZ-UC-m6S"/>
                                 <exclude reference="q78-hL-sL2"/>
                                 <exclude reference="AQF-kW-Iz8"/>
                                 <exclude reference="y8B-SN-d2l"/>
                                 <exclude reference="4sH-yF-fLQ"/>
+                                <exclude reference="3dr-Fv-rA7"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="YN7-dg-fEw"/>
@@ -537,12 +537,12 @@
                                 <include reference="IiW-fN-iYx"/>
                                 <include reference="KY7-rL-S8i"/>
                                 <include reference="wjB-6q-EKU"/>
-                                <include reference="3dr-Fv-rA7"/>
                                 <include reference="xmZ-UC-m6S"/>
                                 <include reference="q78-hL-sL2"/>
                                 <include reference="AQF-kW-Iz8"/>
                                 <include reference="y8B-SN-d2l"/>
                                 <include reference="4sH-yF-fLQ"/>
+                                <include reference="3dr-Fv-rA7"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="YN7-dg-fEw"/>

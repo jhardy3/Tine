@@ -14,19 +14,34 @@ class ShedController {
     
     // MARK: - Post Creation and deletion ( modification )
     
-    // Create new post
-    
+    // Create new shed
     static func createShed(image: UIImage, hunterIdentifier: String, completion: (success: Bool) -> Void) {
+        
+        // guard for current hunter or complete false and return
         guard var currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false) ; return }
+        
+        // Upload the image to S3 and receive a specific url back if successful
         PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
+            
+            // Check for url
             if let url = url {
+                
+                // If URL is present instantiate a Shed and save it.
                 var shed = Shed(hunterID: hunterIdentifier, imageID: url)
                 shed.save()
+                
+                // Check for obviously present identifier
                 guard let shedID = shed.identifier else { completion(success: false) ; return }
+                
+                // Add Shed ID to currentHunters Shed IDs and save it
                 currentHunter.shedIDs.append(shedID)
                 currentHunter.save()
+                
+                // Complete true
                 completion(success: true)
             } else {
+                
+                // If url is not present complete false
                 completion(success: false)
             }
         }
@@ -34,10 +49,15 @@ class ShedController {
     
     // Delete post
     static func deleteShed(shed : Shed) {
+        
+        // Guard for current hunter and shed ID or return nil
         guard let currentHunter = HunterController.sharedInstance.currentHunter, shedID = shed.identifier else { return }
         
+        // Create an index of removal to hold possible ID
         var indexOfRemoval: Int?
         
+        
+        // For
         for index in 0..<currentHunter.shedIDs.count {
             if currentHunter.shedIDs[index] == shedID {
                 indexOfRemoval = index
