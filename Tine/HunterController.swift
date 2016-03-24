@@ -131,7 +131,11 @@ class HunterController {
                 })
             }
             
-            completion(hunters: huntersArray)
+            
+            dispatch_group_notify(group, dispatch_get_main_queue(), { () -> Void in
+                completion(hunters: huntersArray)
+            })
+            
             
         }
     }

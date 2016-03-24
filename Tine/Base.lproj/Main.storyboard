@@ -327,9 +327,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="8" y="195" width="384" height="20"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjB-6q-EKU">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -382,8 +379,7 @@
                                         <exclude reference="vJr-xM-hPR"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="215" y="72" width="69" height="60"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="vJr-xM-hPR"/>
                                     </mask>
@@ -754,13 +750,13 @@
         <!--Camera View Controller-->
         <scene sceneID="udY-Ni-pgY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RL8-13-h2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dVG-Ew-X5O" customClass="CameraViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="620-6n-Byl"/>
                         <viewControllerLayoutGuide type="bottom" id="9uF-be-iWc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ym6-hl-40f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-2f-bD0">
@@ -789,12 +785,12 @@
                                 <exclude reference="rBf-9h-t8b"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="YYI-5G-wzY"/>
+                                <exclude reference="kmo-in-7Kj"/>
                                 <exclude reference="7Xv-Wz-xZv"/>
                                 <exclude reference="DqC-aU-yvz"/>
                                 <exclude reference="QUt-yc-DK4"/>
                                 <exclude reference="lq6-fl-kBn"/>
-                                <exclude reference="YYI-5G-wzY"/>
-                                <exclude reference="kmo-in-7Kj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -803,12 +799,12 @@
                                 <include reference="rBf-9h-t8b"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="YYI-5G-wzY"/>
+                                <include reference="kmo-in-7Kj"/>
                                 <include reference="7Xv-Wz-xZv"/>
                                 <include reference="DqC-aU-yvz"/>
                                 <include reference="QUt-yc-DK4"/>
                                 <include reference="lq6-fl-kBn"/>
-                                <include reference="YYI-5G-wzY"/>
-                                <include reference="kmo-in-7Kj"/>
                             </mask>
                         </variation>
                     </view>
@@ -817,6 +813,7 @@
                         <outlet property="shedImageView" destination="Q1L-2f-bD0" id="npA-Ht-qsh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RL8-13-h2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="916.5" y="1530"/>
         </scene>
@@ -863,14 +860,20 @@
             <objects>
                 <tableViewController id="xOC-cO-hT2" customClass="SearchTableViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pUy-kb-V6n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bC9-sJ-UDN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="bC9-sJ-UDN">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bC9-sJ-UDN" id="mEk-lA-VcL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fkd-a4-Gbf" kind="show" identifier="toHunter" id="ZVx-aP-K1Z"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -887,6 +890,9 @@
                                 <segment title="Hunters"/>
                                 <segment title="Add Hunter"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentedControllerChanged:" destination="xOC-cO-hT2" eventType="valueChanged" id="aN3-jR-9H6"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
@@ -902,12 +908,15 @@
             <objects>
                 <tableViewController storyboardIdentifier="UserSearchResultsTableViewController" id="AbE-oj-404" customClass="SearchResultsTableViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mRX-rM-bLu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jFD-ON-fYW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="jFD-ON-fYW">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jFD-ON-fYW" id="NhB-Ym-NQ7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1002,6 +1011,6 @@
         <image name="Shed" width="2504" height="2504"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZFO-nG-BXO"/>
+        <segue reference="ZVx-aP-K1Z"/>
     </inferredMetricsTieBreakers>
 </document>

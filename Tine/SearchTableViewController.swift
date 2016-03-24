@@ -21,11 +21,16 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
             case Hunters:
                 guard let tracking = HunterController.sharedInstance.currentHunter?.trackingIDs else { completion(hunters: []) ; return }
                 HunterController.fetchHuntersWithIdentifierArray(tracking, completion: { (hunters) -> Void in
-                    completion(hunters: hunters)
+                                        completion(hunters: hunters)
                 })
             
             case AddHunter:
-                HunterController.fetchAllHunters({ (hunters) -> Void in
+                HunterController.fetchAllHunters({ (var hunters) -> Void in
+                    for index in 0..<hunters.count {
+                        if HunterController.sharedInstance.currentHunter!.identifier! == hunters[index].identifier! {
+                            hunters.removeAtIndex(index)
+                        }
+                    }                    
                     completion(hunters: hunters)
                 })
             }
@@ -38,6 +43,12 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     var searchController: UISearchController!
     var usersDataSource = [Hunter]()
     
+    var mode: ViewMode {
+        get {
+            return ViewMode(rawValue: segmentedControl.selectedSegmentIndex)!
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +57,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
         
         setUpSearchController()
     }
@@ -67,15 +79,24 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         return usersDataSource.count
     }
     
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-    
-    // Configure the cell...
-    
+    let cell = tableView.dequeueReusableCellWithIdentifier("searchCell", forIndexPath: indexPath)
+        
+    cell.textLabel?.text = usersDataSource[indexPath.row].username
+        
     return cell
     }
-    */
+    
+    
+    func updateViewBasedOnMode() {
+        mode.hunters { (hunters) -> Void in
+            self.usersDataSource = hunters
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.tableView.reloadData()
+            })
+        }
+    }
     
     func setUpSearchController() {
         
@@ -91,7 +112,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         
     }
     
-    
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         if let searchTerm = searchController.searchBar.text?.lowercaseString,
             let resultsViewController = searchController.searchResultsController as? SearchResultsTableViewController {
@@ -102,14 +122,9 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    @IBAction func segmentedControllerChanged(sender: UISegmentedControl) {
+        updateViewBasedOnMode()
+    }
     
     
     
@@ -148,14 +163,26 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     }
     */
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        if segue.identifier == "toHunter" {
+            guard let cell = sender as? UITableViewCell else { return }
+            
+            if let indexPath = tableView.indexPathForCell(cell) {
+                
+                let hunter = usersDataSource[indexPath.row]
+                
+                let destinationViewController = segue.destinationViewController as? ProfileViewController
+                destinationViewController?.hunter = hunter
+                
+            } else if let indexPath = (searchController.searchResultsController as? SearchResultsTableViewController)?.tableView.indexPathForCell(cell) {
+                
+                let hunter = (searchController.searchResultsController as! SearchResultsTableViewController).usersResultsDataSource[indexPath.row]
+                
+                let destinationViewController = segue.destinationViewController as? ProfileViewController
+                destinationViewController?.hunter = hunter
+            }
+        }
     }
-    */
+
     
 }
