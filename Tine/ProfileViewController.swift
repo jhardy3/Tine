@@ -36,12 +36,17 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     // MARK: - Class Functions
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
         flowLayout.minimumLineSpacing = 0
         flowLayout.minimumInteritemSpacing = 0
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -158,12 +163,11 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        var collectionViewSize = collectionView.frame.size
+        let viewWidth = view.frame.width - 3
+        let viewWidthMinusMargin = viewWidth - kMargin * 2
+        let itemHeightDimension = viewWidth / 3.0
+        let itemDimension = viewWidthMinusMargin / 3.0
         
-        
-        
-        return CGSizeMake(collectionViewSize.width / 3.0, collectionViewSize.width / 3.0)
+        return CGSizeMake(itemDimension, itemHeightDimension)
     }
-    
-    
 }

@@ -12,6 +12,12 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var shedImage: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.contentView.autoresizingMask.insert(.FlexibleHeight)
+        self.contentView.autoresizingMask.insert(.FlexibleWidth)
+    }
     
     func updateWith(shed: Shed) {
         if let shedImage = shed.shedImage {
