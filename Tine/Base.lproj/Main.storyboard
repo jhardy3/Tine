@@ -581,7 +581,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3OH-5R-udz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Follow"/>
+                                <state key="normal" title="ExtraLongString"/>
                                 <connections>
                                     <action selector="followButtonTapped:" destination="fkd-a4-Gbf" eventType="touchUpInside" id="BLU-Xi-Pf9"/>
                                 </connections>

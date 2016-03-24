@@ -9,19 +9,40 @@
 import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    
     
     var hunter: Hunter?
     
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    var isFollowing: Bool {
+        get {
+            if followButton.titleLabel?.text == "track" {
+                return false
+            } else {
+                return true
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        if let hunterTrackIDs = HunterController.sharedInstance.currentHunter?.trackingIDs, let hunterID = hunter?.identifier {
+            if hunterTrackIDs.contains(hunterID) {
+                followButton.setTitle("Untrack", forState: .Normal)
+            } else {
+                followButton.setTitle("track", forState: .Normal)
+            }
+            if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
+                followButton.hidden = true
+            }
+        }
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,7 +60,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     @IBAction func followButtonTapped(sender: UIButton) {
         guard let hunter = self.hunter else { return }
-        HunterController.hunterTrackHunter(hunter)
+        if isFollowing {
+            HunterController.hunterUntrackHunter(hunter)
+            followButton.setTitle("Track", forState: .Normal)
+        } else {
+            HunterController.hunterTrackHunter(hunter)
+            followButton.setTitle("Untrack", forState: .Normal)
+        }
     }
     
     func updateWithIdentifier(identifier: String) {
@@ -51,5 +78,5 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             
         }
     }
-
+    
 }
