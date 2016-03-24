@@ -12,8 +12,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // shedCell
     
-    static let sharedInstance = TinelineViewController()
-    
     var sheds = [Shed]()
     
     @IBOutlet weak var segmentedController: UISegmentedControl!
@@ -22,17 +20,25 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        ShedController.fetchShedsForTineline { (sheds) -> Void in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.sheds = sheds
-                self.tableView.reloadData()
-            })
-        }
+        
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ShedController.fetchShedsForTineline { (sheds) -> Void in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
+                self.tableView.reloadData()
+            })
+        }
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        tableView.addSubview(refreshControl)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,5 +55,29 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sheds.count
+    }
+    
+    func refresh(refreshControl: UIRefreshControl) {
+        ShedController.fetchShedsForTineline { (sheds) -> Void in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
+                self.tableView.reloadData()
+            })
+        }
+        refreshControl.endRefreshing()
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toProfile" {
+            let destinationView = segue.destinationViewController as? ProfileViewController
+            if let button = sender as? UIButton,
+                let view = button.superview,
+                let cell = view.superview as? ShedTableViewCell {
+                    guard let indexPath = tableView.indexPathForCell(cell)  else { return }
+                    let identifier = self.sheds[indexPath.row].hunterIdentifier
+                    destinationView?.updateWithIdentifier(identifier)
+            }
+        }
     }
 }

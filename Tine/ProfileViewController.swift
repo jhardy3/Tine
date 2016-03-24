@@ -10,6 +10,10 @@ import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    
+    var hunter: Hunter?
+    
+    @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -33,5 +37,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return 1
     }
     
+    @IBAction func followButtonTapped(sender: UIButton) {
+        guard let hunter = self.hunter else { return }
+        HunterController.hunterTrackHunter(hunter)
+    }
+    
+    func updateWithIdentifier(identifier: String) {
+        HunterController.fetchHunterForIdentifier(identifier) { (hunter) -> Void in
+            if let hunter = hunter {
+                self.hunter = hunter
+                print("Hunter Received")
+            }
+            
+        }
+    }
 
 }

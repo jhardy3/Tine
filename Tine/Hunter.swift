@@ -44,7 +44,7 @@ class Hunter: FirebaseType {
             profileImageKey : profileImageIdentifier,
             shedIDsKey : shedIDs.toDic(),
             trackingIDsKey : trackingIDs.toDic(),
-            trackedIDsKey : trackingIDs.toDic(),
+            trackedIDsKey : trackedIDs.toDic(),
             usernameKey : username,
             shedCountKey : shedCount,
             brownCountKey : brownCount,

@@ -146,6 +146,25 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59t-La-RQj">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="337" id="sMp-Mm-pjy"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="sMp-Mm-pjy"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="sMp-Mm-pjy"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <connections>
+                                                        <segue destination="fkd-a4-Gbf" kind="show" identifier="toProfile" id="ZFO-nG-BXO"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="tzP-6p-IY2" firstAttribute="top" secondItem="55h-xy-9vS" secondAttribute="topMargin" constant="8" id="34Y-AN-AMr">
@@ -155,11 +174,14 @@
                                                 <constraint firstItem="8ro-Y5-LUp" firstAttribute="top" secondItem="tzP-6p-IY2" secondAttribute="bottom" constant="-1" id="Gfb-ta-Vb9">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                                 </constraint>
+                                                <constraint firstItem="59t-La-RQj" firstAttribute="leading" secondItem="55h-xy-9vS" secondAttribute="leading" constant="8" id="Jin-o7-yC0"/>
                                                 <constraint firstAttribute="trailing" secondItem="8ro-Y5-LUp" secondAttribute="trailing" id="NjA-SC-ijg"/>
+                                                <constraint firstItem="59t-La-RQj" firstAttribute="top" secondItem="55h-xy-9vS" secondAttribute="top" constant="12" id="PRN-Vb-k8b"/>
                                                 <constraint firstItem="8ro-Y5-LUp" firstAttribute="top" secondItem="55h-xy-9vS" secondAttribute="top" id="bh6-1w-Fpv">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="42"/>
                                                 </constraint>
                                                 <constraint firstAttribute="trailing" secondItem="8ro-Y5-LUp" secondAttribute="trailing" id="cvw-PE-RFU"/>
+                                                <constraint firstItem="8ro-Y5-LUp" firstAttribute="top" secondItem="59t-La-RQj" secondAttribute="bottom" id="nHs-II-VNu"/>
                                                 <constraint firstItem="tzP-6p-IY2" firstAttribute="leading" secondItem="55h-xy-9vS" secondAttribute="leading" constant="8" id="nfC-Bf-Pvy"/>
                                                 <constraint firstItem="8ro-Y5-LUp" firstAttribute="leading" secondItem="55h-xy-9vS" secondAttribute="leading" id="oQY-kq-nkr"/>
                                                 <constraint firstAttribute="bottom" secondItem="8ro-Y5-LUp" secondAttribute="bottom" id="uf9-rs-klb">
@@ -169,22 +191,29 @@
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="tzP-6p-IY2"/>
+                                                    <exclude reference="59t-La-RQj"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="Jin-o7-yC0"/>
+                                                    <exclude reference="PRN-Vb-k8b"/>
                                                     <exclude reference="34Y-AN-AMr"/>
                                                     <exclude reference="nfC-Bf-Pvy"/>
                                                     <exclude reference="5O8-5k-JSY"/>
                                                     <exclude reference="Gfb-ta-Vb9"/>
                                                     <exclude reference="bh6-1w-Fpv"/>
                                                     <exclude reference="cvw-PE-RFU"/>
+                                                    <exclude reference="nHs-II-VNu"/>
                                                     <exclude reference="uf9-rs-klb"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="tzP-6p-IY2"/>
+                                                    <include reference="59t-La-RQj"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="Jin-o7-yC0"/>
+                                                    <include reference="PRN-Vb-k8b"/>
                                                     <exclude reference="34Y-AN-AMr"/>
                                                     <include reference="nfC-Bf-Pvy"/>
                                                     <include reference="5O8-5k-JSY"/>
@@ -192,6 +221,7 @@
                                                     <exclude reference="NjA-SC-ijg"/>
                                                     <include reference="bh6-1w-Fpv"/>
                                                     <include reference="cvw-PE-RFU"/>
+                                                    <include reference="nHs-II-VNu"/>
                                                     <exclude reference="oQY-kq-nkr"/>
                                                     <include reference="uf9-rs-klb"/>
                                                 </mask>
@@ -550,9 +580,21 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="RtQ-iF-N4A"/>
+                    <navigationItem key="navigationItem" id="RtQ-iF-N4A">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1d9-j7-qMr">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3OH-5R-udz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Follow"/>
+                                <connections>
+                                    <action selector="followButtonTapped:" destination="fkd-a4-Gbf" eventType="touchUpInside" id="BLU-Xi-Pf9"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="4sH-yF-fLQ" id="CKt-4a-3Fc"/>
+                        <outlet property="followButton" destination="3OH-5R-udz" id="81A-eN-uQI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWz-10-P3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -787,9 +829,9 @@
                     <connections>
                         <segue destination="E4m-J8-wdV" kind="relationship" relationship="viewControllers" id="bLK-Yi-lXO"/>
                         <segue destination="Ooi-ix-0Xx" kind="relationship" relationship="viewControllers" id="T95-YY-CIF"/>
+                        <segue destination="iBD-Ah-ycj" kind="relationship" relationship="viewControllers" id="AOb-ur-qGk"/>
                         <segue destination="Wpm-n2-GyH" kind="relationship" relationship="viewControllers" id="a0S-2T-pYg"/>
                         <segue destination="vfX-6N-c0q" kind="relationship" relationship="viewControllers" id="rNW-Qk-kr6"/>
-                        <segue destination="iBD-Ah-ycj" kind="relationship" relationship="viewControllers" id="AOb-ur-qGk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcQ-JI-tIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -808,7 +850,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ym6-hl-40f">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-2f-bD0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1L-2f-bD0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBf-9h-t8b">
@@ -959,11 +1001,11 @@
             </objects>
             <point key="canvasLocation" x="-1081.5" y="340.5"/>
         </scene>
-        <!--Item-->
+        <!--Camera-->
         <scene sceneID="djj-vi-wt0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBD-Ah-ycj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lch-cJ-srG"/>
+                    <tabBarItem key="tabBarItem" title="Camera" id="lch-cJ-srG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXf-bZ-g00">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -982,4 +1024,7 @@
     <resources>
         <image name="Shed" width="2504" height="2504"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZFO-nG-BXO"/>
+    </inferredMetricsTieBreakers>
 </document>

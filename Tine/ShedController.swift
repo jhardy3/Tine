@@ -79,8 +79,6 @@ class ShedController {
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-            postsIDs.sortInPlace { $0 < $1 }
-            
             completion(shedIDs: postsIDs)
         }
         
@@ -112,7 +110,7 @@ class ShedController {
             
             for index in 0..<sheds.count {
                 dispatch_group_enter(groupTwo)
-                if index <= 15 {
+                if index <= 7 {
                     ShedController.fetchShed(sheds[index], completion: { (shed) -> Void in
                         if let shed = shed {
                             shedsToDisplay.append(shed)
@@ -129,8 +127,6 @@ class ShedController {
             })
         }
     }
-
-    
 
     // MARK: - Comment Functionality
     

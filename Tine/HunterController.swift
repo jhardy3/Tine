@@ -98,7 +98,7 @@ class HunterController {
         var hunterArray = [Hunter]()
         let group = dispatch_group_create()
         
-
+        
         for hunterID in identifiers {
             dispatch_group_enter(group)
             fetchHunterForIdentifier(hunterID, completion: { (hunter) -> Void in
@@ -109,7 +109,7 @@ class HunterController {
             })
         }
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-           completion(hunters: hunterArray)
+            completion(hunters: hunterArray)
         }
         
     }
@@ -122,7 +122,40 @@ class HunterController {
     
     // Hunter track Hunter
     
+    static func hunterTrackHunter(var hunter: Hunter) {
+        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunterID = hunter.identifier else { return }
+        
+        currentHunter.trackingIDs.append(trackedHunterID)
+        currentHunter.save()
+        
+        hunter.trackedIDs.append(currentHunterID)
+        hunter.save()
+    }
+    
     // Hunter untrack Hunter
+    static func hunterUntrackHunter(var hunter: Hunter) {
+        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunter = hunter.identifier else { return }
+        
+        print(currentHunter.trackingIDs.count)
+        if currentHunter.trackingIDs.count > 0 {
+            for index in 0..<currentHunter.trackingIDs.count {
+                if currentHunter.trackingIDs[index] == trackedHunter {
+                    currentHunter.trackingIDs.removeAtIndex(index)
+                }
+            }
+        }
+        
+        if hunter.trackedIDs.count > 0 {
+            for index in 0..<hunter.trackedIDs.count {
+                if hunter.trackedIDs[index] == currentHunterID {
+                    hunter.trackedIDs.removeAtIndex(index)
+                }
+            }
+        }
+        
+        hunter.save()
+        currentHunter.save()
+    }
     
     // MARK: - Query for leaderboard
     
