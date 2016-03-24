@@ -145,16 +145,21 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         
     }
     
+    // Updates current search results
     func updateSearchResultsForSearchController(searchController: UISearchController) {
+        
+        // Grabs search term from seachController search bar lowercase ; grabs searchViewController
         if let searchTerm = searchController.searchBar.text?.lowercaseString,
             let resultsViewController = searchController.searchResultsController as? SearchResultsTableViewController {
                 
+                // Assign resultsView data sources as filtered array based on search term ; reload data
                 resultsViewController.usersResultsDataSource = usersDataSource.filter {$0.username.lowercaseString.containsString(searchTerm)}
                 resultsViewController.tableView.reloadData()
         }
         
     }
     
+    // Updates view for segmented control change
     @IBAction func segmentedControllerChanged(sender: UISegmentedControl) {
         updateViewBasedOnMode()
     }
