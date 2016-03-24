@@ -114,9 +114,27 @@ class HunterController {
         
     }
     
-    // MARK: - Modify hunter
-    
-    // Saves existing hunter / overwrites existing hunter with updated hunter
+    static func fetchAllHunters(completion: (hunters: [Hunter]) -> Void) {
+        FirebaseController.dataAtEndPoint("/hunter/") { (data) -> Void in
+            var huntersArray = [Hunter]()
+            
+            guard let arrayOfJSONHunters = data as? [String : AnyObject] else { completion(hunters: []) ; return }
+            let group = dispatch_group_create()
+            
+            for hunterID in arrayOfJSONHunters.keys {
+                dispatch_group_enter(group)
+                fetchHunterForIdentifier(hunterID, completion: { (hunter) -> Void in
+                    if let hunter = hunter {
+                        huntersArray.append(hunter)
+                    }
+                    dispatch_group_leave(group)
+                })
+            }
+            
+            completion(hunters: huntersArray)
+            
+        }
+    }
     
     // MARK: - Social Interaction Functions
     
