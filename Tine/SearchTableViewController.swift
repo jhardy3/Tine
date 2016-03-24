@@ -10,66 +10,81 @@ import UIKit
 
 class SearchTableViewController: UITableViewController, UISearchResultsUpdating {
     
+    // MARK: - Properties
+    
+    var searchController: UISearchController!
+    var usersDataSource = [Hunter]()
+    
+    // View Mode Enum Dictates which content will be displayed based on segmented controller
     enum ViewMode: Int {
+        
+        // Hunters case displayed tracked hunters
         case Hunters = 0
+        
+        // Displays all Hunters narrowed by search term
         case AddHunter = 1
         
+        // function retrieves hunters based on mode
         func hunters(completion:(hunters: [Hunter]) -> Void) {
             
+            // Function switches on self checking for view mode and carring out approriate function accordingly
             switch self {
                 
+            // Hunter case fetches all hunters with current hunters trackingID's array and completes with those hunters
             case Hunters:
                 guard let tracking = HunterController.sharedInstance.currentHunter?.trackingIDs else { completion(hunters: []) ; return }
                 HunterController.fetchHuntersWithIdentifierArray(tracking, completion: { (hunters) -> Void in
                     completion(hunters: hunters)
                 })
                 
+            // Add Hunter case fetches all hunters
             case AddHunter:
                 HunterController.fetchAllHunters({ (var hunters) -> Void in
+                    
+                    // Declare index of removal to remove self from list
                     var indexOfRemoval: Int?
+                    
+                    // Loop through IDs until self is found and set index of removal
                     for index in 0..<hunters.count {
                         if HunterController.sharedInstance.currentHunter!.identifier! == hunters[index].identifier! {
                             indexOfRemoval = index
                         }
                     }
+                    
+                    // Remove self (always will run)
                     if let indexOfRemoval = indexOfRemoval {
                         hunters.removeAtIndex(indexOfRemoval)
                     }
-
+                    
+                    
+                    // Complete with hunters Array
                     completion(hunters: hunters)
                 })
             }
         }
     }
     
-    
-    
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    var searchController: UISearchController!
-    var usersDataSource = [Hunter]()
-    
+    // Gettable property that returns View Mode based on segmented control index
     var mode: ViewMode {
         get {
             return ViewMode(rawValue: segmentedControl.selectedSegmentIndex)!
         }
     }
     
+    // MARK: - IBOutlet Properties
+    
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    // MARK: - Class Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // Updates view based on view mode currently selected
+        updateViewBasedOnMode()
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
+        // Sets up the search controller class and search bar for searching searches
         setUpSearchController()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Table view data source
@@ -93,8 +108,13 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         return cell
     }
     
+    // MARK: - View Based Functions
     
+    // Updates based on current View Mode
     func updateViewBasedOnMode() {
+        
+        // Calls viewmode respective hunter function and sets data source to accordingly return hunters array
+        // Reloads tableview on main queue
         mode.hunters { (hunters) -> Void in
             self.usersDataSource = hunters
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -103,16 +123,24 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
         }
     }
     
+    // Sets up the search controller
     func setUpSearchController() {
         
+        // Results controller is a disjoint TableView. Instantiate it!
         let resultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("UserSearchResultsTableViewController")
         
+        // Assign Search Controller property with instantiated search controller with results controller as searchResultsController
+        // Assign delegate to self
+        // Make search bar auto size to fit view
+        // Dont hide nav bar
+        // Assign search bar to top of tableview as header
         searchController = UISearchController(searchResultsController: resultsController)
         searchController.searchResultsUpdater = self
         searchController.searchBar.sizeToFit()
         searchController.hidesNavigationBarDuringPresentation = false
         tableView.tableHeaderView = searchController.searchBar
         
+        // Not sure what this does
         definesPresentationContext = true
         
     }
@@ -130,43 +158,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     @IBAction func segmentedControllerChanged(sender: UISegmentedControl) {
         updateViewBasedOnMode()
     }
-    
-    
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
-    return true
-    }
-    */
-    
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
-    // Delete the row from the data source
-    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
-    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
-    }
-    */
-    
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
-    }
-    */
-    
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the item to be re-orderable.
-    return true
-    }
-    */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toHunter" {

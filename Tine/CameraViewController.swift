@@ -10,24 +10,24 @@ import UIKit
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    // MARK: - Properties
+    
     var image: UIImage?
+    
+    // MARK: - IBOutlet Properties
     
     @IBOutlet weak var shedImageView: UIImageView!
     
-    
-    
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
+    // MARK: - Class Functions
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
+        // Checks for a current Image ; if not displays camera
         if image == nil {
             displayCamera()
         }
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,37 +35,34 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    // MARK: - IBAction Functions
     
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
+    // Posts a new shed
     @IBAction func postButtonTapped(sender: UIButton) {
+        
+        // Guard for image and hunterID and create a new shed
         if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
             ShedController.createShed(image, hunterIdentifier: hunterID, completion: { (success) -> Void in
+                
+                // If shed creation is successful remove image and (eventually kick to timeline)
                 if success {
+                    self.image = nil
                     return
                 }
             })
         }
     }
     
+    // MARK: - Camera Functions
+    
+    // Creates and displays a camera
     func displayCamera() {
         
+        // Create a new imagePicker and assign delegate to self
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         
+        // Check for camera functionality ; if present imagePick source set to camera and present camera view controller
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             imagePicker.sourceType = .Camera
             self.presentViewController(imagePicker, animated: true, completion: nil)
@@ -73,10 +70,17 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
+    // Once picture is take function is called
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        // Check for valid picture
         guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+        
+        // If valid display image and set image to new image
         self.image = image
         self.shedImageView.image = image
+        
+        // Dismiss camera view controller
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
