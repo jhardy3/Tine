@@ -34,6 +34,7 @@ class ShedController {
                 guard let shedID = shed.identifier else { completion(success: false) ; return }
                 
                 // Add Shed ID to currentHunters Shed IDs and save it
+                HunterController.sharedInstance.currentHunter?.shedIDs.append(shedID)
                 currentHunter.shedIDs.append(shedID)
                 currentHunter.save()
                 
@@ -173,8 +174,8 @@ class ShedController {
             for index in 0..<sheds.count {
                 dispatch_group_enter(groupTwo)
                 
-                // Only grab 30 sheds
-                if index <= 30 {
+                // Only grab 100 sheds
+                if index <= 100 {
                     ShedController.fetchShed(sheds[index], completion: { (shed) -> Void in
                         
                         // If shed is returned append shed to shedsToDisplayArray

@@ -10,6 +10,7 @@ import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
     
+    var delegate: ProfileViewController?
     @IBOutlet weak var shedImage: UIImageView!
     
     override func awakeFromNib() {
@@ -25,6 +26,9 @@ class ImageCollectionViewCell: UICollectionViewCell {
         } else {
             shedImage.downloadImageFrom(link: shed.imageIdentifier, contentMode: .ScaleAspectFit)
             shed.shedImage = shedImage.image
+            if let delegate = delegate {
+                delegate.collectionView.reloadData()
+            }
         }
     }
     

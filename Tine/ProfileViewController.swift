@@ -61,6 +61,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("shedCell", forIndexPath: indexPath) as? ImageCollectionViewCell {
             let shed = sheds[indexPath.row]
             cell.updateWith(shed)
+            cell.delegate = self
             return cell
         } else {
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("shedCell", forIndexPath: indexPath)

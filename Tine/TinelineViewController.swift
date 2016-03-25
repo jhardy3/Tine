@@ -60,15 +60,22 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func refresh(refreshControl: UIRefreshControl) {
         
         // When refreshed, completes fetch sheds again and reloads tableview in main thread
-        ShedController.fetchShedsForTineline { (sheds) -> Void in
+        let group = dispatch_group_create()
+        
+        dispatch_group_enter(group)
+        ShedController.fetchShedsForTineline { (shedsReturned) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
+                self.sheds = shedsReturned.sort { $0.0.identifier > $0.1.identifier }
+                dispatch_group_leave(group)
                 self.tableView.reloadData()
             })
         }
         
         // End refresh animation
-        refreshControl.endRefreshing()
+        dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
+            refreshControl.endRefreshing()
+        }
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
