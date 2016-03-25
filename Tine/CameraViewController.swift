@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CoreLocation
 
-class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
     // MARK: - Properties
     
     var image: UIImage?
+    var locationManger: CLLocationManager!
     
     // MARK: - IBOutlet Properties
     
@@ -34,6 +36,11 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+
+        
         // Do any additional setup after loading the view.
     }
     
@@ -48,6 +55,9 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
                 
                 // If shed creation is successful remove image and (eventually kick to timeline)
                 if success {
+                    
+                    
+                    
                     NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                     self.image = nil
     

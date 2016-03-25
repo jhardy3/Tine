@@ -37,9 +37,9 @@ class PhotoController {
                 completion(nil)
                 print("Error uploading picture to AWS: \(task.error)")
             } else {
-                print("\(self.AWSUrl)/tine-bucket/\(fileName)")
+//                print("\(self.AWSUrl)/tine-bucket/\(fileName)")
                 completion("\(self.AWSUrl)/tine-bucket/\(fileName)")
-                print("Upload successful")
+//                print("Upload successful")
             }
             return nil
         }
@@ -48,7 +48,6 @@ class PhotoController {
     
     static func fetchImageAtURL(imageURLString: String, completion: (image: UIImage?) -> Void) {
         
-        print(imageURLString)
         if let url = NSURL(string: imageURLString) {
             
             NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in

@@ -9,7 +9,6 @@
 import Foundation
 import Firebase
 
-
 // Class needs to interact with firebase and amazon S3 service to set, pull and modify data
 
 class FirebaseController {

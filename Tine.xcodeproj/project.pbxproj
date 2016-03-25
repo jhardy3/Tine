@@ -12,6 +12,8 @@
 		742BC7E91CA48DC900F12D1E /* ImageUitilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BC7E81CA48DC900F12D1E /* ImageUitilies.swift */; };
 		742BC7EB1CA4DF8C00F12D1E /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BC7EA1CA4DF8C00F12D1E /* AppearanceController.swift */; };
 		742BC7ED1CA4DFC200F12D1E /* UIColor+AppColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742BC7EC1CA4DFC200F12D1E /* UIColor+AppColorPallete.swift */; };
+		742BC7F11CA5CF5C00F12D1E /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742BC7F01CA5CF5C00F12D1E /* GeoFire.framework */; };
+		742BC7F31CA5CFD500F12D1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742BC7F21CA5CFD500F12D1E /* CoreLocation.framework */; };
 		74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5A1CA229DB00EA09C7 /* AWSS3.framework */; };
 		74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5C1CA229F400EA09C7 /* AWSCore.framework */; };
 		74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */; };
@@ -49,6 +51,8 @@
 		742BC7E81CA48DC900F12D1E /* ImageUitilies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUitilies.swift; sourceTree = "<group>"; };
 		742BC7EA1CA4DF8C00F12D1E /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		742BC7EC1CA4DFC200F12D1E /* UIColor+AppColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColorPallete.swift"; sourceTree = "<group>"; };
+		742BC7F01CA5CF5C00F12D1E /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeoFire.framework; path = Tine/GeoFire.framework; sourceTree = "<group>"; };
+		742BC7F21CA5CFD500F12D1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		74499A5A1CA229DB00EA09C7 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
 		74499A5C1CA229F400EA09C7 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "../aws-ios-sdk-2.3.6/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
 		74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "../aws-ios-sdk-2.3.6/frameworks/extras/AWSCognito.framework"; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742BC7F31CA5CFD500F12D1E /* CoreLocation.framework in Frameworks */,
 				74499A5B1CA229DB00EA09C7 /* AWSS3.framework in Frameworks */,
 				74A932041CA1F6040099DB81 /* libc++.tbd in Frameworks */,
 				74A932021CA1F5FE0099DB81 /* libicucore.tbd in Frameworks */,
@@ -98,6 +103,7 @@
 				74A931FA1CA1F5D70099DB81 /* Firebase.framework in Frameworks */,
 				74499A5D1CA229F400EA09C7 /* AWSCore.framework in Frameworks */,
 				74499A5F1CA22A2600EA09C7 /* AWSCognito.framework in Frameworks */,
+				742BC7F11CA5CF5C00F12D1E /* GeoFire.framework in Frameworks */,
 				29F64B0D91EDDAEB13585C95 /* Pods_Tine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +123,8 @@
 		6B098F29E75FCD3A6FD8924F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				742BC7F21CA5CFD500F12D1E /* CoreLocation.framework */,
+				742BC7F01CA5CF5C00F12D1E /* GeoFire.framework */,
 				74499A5E1CA22A2600EA09C7 /* AWSCognito.framework */,
 				74499A5C1CA229F400EA09C7 /* AWSCore.framework */,
 				74499A5A1CA229DB00EA09C7 /* AWSS3.framework */,
@@ -472,11 +480,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Tine",
 				);
 				INFOPLIST_FILE = Tine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Tine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GeoFire.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -489,11 +499,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Tine",
 				);
 				INFOPLIST_FILE = Tine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Tine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GeoFire.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

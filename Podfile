@@ -7,6 +7,8 @@ target 'Tine' do
 
 source 'https://github.com/CocoaPods/Specs.git'
 
+use_frameworks!
+
 pod 'AWSCore'
 pod 'AWSAutoScaling'
 pod 'AWSCloudWatch'
@@ -24,6 +26,7 @@ pod 'AWSSimpleDB'
 pod 'AWSSNS'
 pod 'AWSSQS'
 pod 'AWSCognito'
+pod 'GeoFire', '>= 1.1'
 
 end
 

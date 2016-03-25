@@ -89,6 +89,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Firebase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GeoFire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tine.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -118,6 +128,11 @@
 			<true/>
 		</dict>
 		<key>3B41A9B1D49827D58E203AF61D34F608</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>41CE0E548650F701461EAB35CAFC17B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,6 +167,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BC279E1A4A79751E826180F63A851E07</key>
 		<dict>
 			<key>primary</key>
@@ -162,17 +182,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD9B7A02360DB85AB79C3825CD7D5F37</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C3FB5DE1339FFE064A98868D1CA84176</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D1B3D231EED9AD3B2A77C4CE93023F11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D974CA495563DE66F4DE422A66752296</key>
 		<dict>
 			<key>primary</key>
 			<true/>

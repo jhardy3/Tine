@@ -101,6 +101,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Tine/AWSSNS.framework"
   install_framework "Pods-Tine/AWSSQS.framework"
   install_framework "Pods-Tine/AWSSimpleDB.framework"
+  install_framework "Pods-Tine/Firebase.framework"
+  install_framework "Pods-Tine/GeoFire.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Tine/AWSAutoScaling.framework"
@@ -120,4 +122,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Tine/AWSSNS.framework"
   install_framework "Pods-Tine/AWSSQS.framework"
   install_framework "Pods-Tine/AWSSimpleDB.framework"
+  install_framework "Pods-Tine/Firebase.framework"
+  install_framework "Pods-Tine/GeoFire.framework"
 fi

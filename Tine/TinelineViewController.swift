@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import CoreLocation
 
-class TinelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+class TinelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     // MARK: - Properties
     
     // Create a sheds array to hold sheds being displayed by tableview cells
     var sheds = [Shed]()
+    
+    var locationManager: CLLocationManager!
     
     // MARK: - IBOutlet Properties
     
@@ -25,6 +29,23 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestLocation()
+        if let location = locationManager.location {
+            print("have location")
+            LocationController.queryAroundMe(location, completion: { (shedIDs) -> Void in
+                print("sup")
+            })
+        }
+        
+        
+        
+
+        
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "newShedsAddedRefresh", name: "shedAdded", object: nil)
         
@@ -101,10 +122,10 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 
                 dispatch_group_leave(group)
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.tableView.reloadData()
-                })
-                
+                // If image problems begin occuring
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    self.tableView.reloadData()
+//                })
             })
         }
     
@@ -114,6 +135,18 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         
 
     }
+    
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation = locations[0]
+        
+        LocationController.queryAroundMe(userLocation) { (shedIDs) -> Void in
+            print("fired")
+        }
+    }
+    
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toProfile" {
@@ -138,5 +171,9 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                     destinationView?.updateWithIdentifier(identifier)
             }
         }
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print(error.debugDescription)
     }
 }

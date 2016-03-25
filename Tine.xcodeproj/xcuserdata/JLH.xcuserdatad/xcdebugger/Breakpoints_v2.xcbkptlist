@@ -26,12 +26,12 @@
                   moduleName = "Tine"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/Tine/Tine/Comment.swift"
-                  timestampString = "480619195.157142"
+                  timestampString = "480637469.791281"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
                   endingLineNumber = "14"
-                  offsetFromSymbolStart = "36">
+                  offsetFromSymbolStart = "53">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "Tine"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/Tine/Tine/Comment.swift"
-                  timestampString = "480619195.157277"
+                  timestampString = "480637469.791411"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
                   endingLineNumber = "39"
-                  offsetFromSymbolStart = "0">
+                  offsetFromSymbolStart = "11">
                </Location>
             </Locations>
          </BreakpointContent>
