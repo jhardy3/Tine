@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: - Properties
     
@@ -28,6 +28,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         if image == nil {
             displayCamera()
         }
+        shedMessageTextField.delegate = self
     }
     
     override func viewDidLoad() {
@@ -49,6 +50,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 if success {
                     NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                     self.image = nil
+    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.tabBarController?.selectedIndex = 0
+                    })
+                    
                     return
                 }
             })
@@ -84,6 +90,14 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Dismiss camera view controller
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    // MARK: - TextField Delegate Functions
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     

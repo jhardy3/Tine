@@ -109,7 +109,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         
         // End refresh animation
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-            tableView.reloadData()
+            self.tableView.reloadData()
         }
         
 
