@@ -12,10 +12,22 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
 
     
     @IBOutlet weak var tableView: UITableView!
+    var sheds = [Hunter]()
+    
+    override func viewWillAppear(animated: Bool) {
+        HunterController.fetchAllHunters { (hunters) -> Void in
+            self.sheds = hunters.sort { $0.shedCount > $1.shedCount }
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.tableView.reloadData()
+            })
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
@@ -25,11 +37,14 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return sheds.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("leaderboardCell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = sheds[indexPath.row].username
+        cell.detailTextLabel?.text = String(sheds[indexPath.row].shedCount)
         
         return cell
     }

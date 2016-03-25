@@ -34,7 +34,6 @@ class ShedController {
                 guard let shedID = shed.identifier else { completion(success: false) ; return }
                 
                 // Add Shed ID to currentHunters Shed IDs and save it
-                HunterController.sharedInstance.currentHunter?.shedIDs.append(shedID)
                 currentHunter.shedIDs.append(shedID)
                 currentHunter.save()
                 
