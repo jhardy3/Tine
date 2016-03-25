@@ -26,6 +26,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Fetch all sheds for initial tineline preview ( eventually this will be dependent upon segmented control && refined )
         ShedController.fetchShedsForTineline { (sheds) -> Void in
             

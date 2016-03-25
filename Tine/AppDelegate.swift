@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             credentialsProvider: credentialsProvider)
         AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
 
-        
+        AppearanceController.initializaeAppearanceDefaults()
         return true
     }
 

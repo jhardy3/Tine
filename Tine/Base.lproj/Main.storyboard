@@ -165,6 +165,15 @@
                                                         <segue destination="fkd-a4-Gbf" kind="show" identifier="toProfile" id="ZFO-nG-BXO"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXd-Vr-nzo">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="505" width="384" height="81"/>
+                                                    </variation>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="tzP-6p-IY2" firstAttribute="top" secondItem="55h-xy-9vS" secondAttribute="topMargin" constant="8" id="34Y-AN-AMr">
@@ -192,6 +201,7 @@
                                                 <mask key="subviews">
                                                     <exclude reference="tzP-6p-IY2"/>
                                                     <exclude reference="59t-La-RQj"/>
+                                                    <exclude reference="KXd-Vr-nzo"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="Jin-o7-yC0"/>
@@ -210,6 +220,7 @@
                                                 <mask key="subviews">
                                                     <include reference="tzP-6p-IY2"/>
                                                     <include reference="59t-La-RQj"/>
+                                                    <include reference="KXd-Vr-nzo"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="Jin-o7-yC0"/>
@@ -888,6 +899,6 @@
         <image name="Shed" width="2504" height="2504"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZVx-aP-K1Z"/>
+        <segue reference="ZFO-nG-BXO"/>
     </inferredMetricsTieBreakers>
 </document>

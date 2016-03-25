@@ -19,6 +19,7 @@ class ShedTableViewCell: UITableViewCell {
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+       
 
         // Configure the view for the selected state
     }
@@ -27,12 +28,15 @@ class ShedTableViewCell: UITableViewCell {
     
     
     override func prepareForReuse() {
+        
         super.prepareForReuse()
         self.shedImageView.image = nil
     }
     
     // Update View with passed in shed
     func updateWith(shed: Shed) {
+        
+//         self.contentView.backgroundColor = UIColor.desertSkyBlue()
         
         // If shed image exists, set shedImageView to image
         if shed.shedImage == nil {
