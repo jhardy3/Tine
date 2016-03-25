@@ -38,10 +38,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if tabBarController?.selectedIndex == 3 {
+            guard let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier else { return }
+            self.updateWithIdentifier(currentHunterID)
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
         flowLayout.minimumLineSpacing = 0
