@@ -26,7 +26,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "newShedsAddedRefresh", name: "shedAdded", object: nil)
         
         // Fetch all sheds for initial tineline preview ( eventually this will be dependent upon segmented control && refined )
         ShedController.fetchShedsForTineline { (sheds) -> Void in
@@ -86,6 +86,33 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
             refreshControl.endRefreshing()
         }
         
+    }
+    
+    func newShedsAddedRefresh() {
+        // When refreshed, completes fetch sheds again and reloads tableview in main thread
+        let group = dispatch_group_create()
+        
+        dispatch_group_enter(group)
+        ShedController.fetchShedsForTineline { (shedsReturned) -> Void in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.sheds = shedsReturned.sort { $0.0.identifier > $0.1.identifier }
+                
+                
+                
+                dispatch_group_leave(group)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.tableView.reloadData()
+                })
+                
+            })
+        }
+        
+        // End refresh animation
+        dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
+            tableView.reloadData()
+        }
+        
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

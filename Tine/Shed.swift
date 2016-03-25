@@ -16,6 +16,7 @@ class Shed: FirebaseType {
     private let hunterKey = "hunterKey"
     private let messageIdKey = "messagesKey"
     private let usernameKey = "usernameKey"
+    private let shedMessageKey = "shedMessage"
     
     // Firebase type identifiers and variables
     var identifier: String?
@@ -24,11 +25,13 @@ class Shed: FirebaseType {
     var username: String
     var messageIdentifiers = [String]()
     var shedImage: UIImage?
+    var shedMessage: String?
     
     let endpoint = "/shed/"
     
     var jsonValue : [String : AnyObject] {
         return [
+            shedMessageKey : shedMessage ?? "",
             usernameKey : username,
             imageKey : imageIdentifier,
             hunterKey : hunterIdentifier,
@@ -58,13 +61,21 @@ class Shed: FirebaseType {
         PhotoController.fetchImageAtURL(imageIdentifier) { (image) -> Void in
             self.shedImage = image
         }
+        
+        if let message = json[shedMessageKey] as? String {
+            self.shedMessage = message
+        }
     }
     
     // Class Initializer
-    init(hunterID: String, imageID: String?, username: String) {
+    init(hunterID: String, imageID: String?, username: String, shedMessage: String?) {
         self.hunterIdentifier = hunterID
         self.imageIdentifier = imageID ?? ""
         self.username = username
+        
+        if let shedMessage = shedMessage {
+            self.shedMessage = shedMessage
+        }
     }
 }
 

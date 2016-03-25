@@ -16,6 +16,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     // MARK: - IBOutlet Properties
     
+    @IBOutlet weak var shedMessageTextField: UITextField!
     @IBOutlet weak var shedImageView: UIImageView!
     
     // MARK: - Class Functions
@@ -42,10 +43,11 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         // Guard for image and hunterID and create a new shed
         if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-            ShedController.createShed(image, hunterIdentifier: hunterID, completion: { (success) -> Void in
+            ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextField.text, completion: { (success) -> Void in
                 
                 // If shed creation is successful remove image and (eventually kick to timeline)
                 if success {
+                    NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                     self.image = nil
                     return
                 }

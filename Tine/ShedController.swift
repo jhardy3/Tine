@@ -15,7 +15,7 @@ class ShedController {
     // MARK: - Post Creation and deletion ( modification )
     
     // Create new shed
-    static func createShed(image: UIImage, hunterIdentifier: String, completion: (success: Bool) -> Void) {
+    static func createShed(image: UIImage, hunterIdentifier: String, shedMessage: String?, completion: (success: Bool) -> Void) {
         
         // guard for current hunter or complete false and return
         guard var currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false) ; return }
@@ -27,7 +27,7 @@ class ShedController {
             if let url = url {
                 
                 // If URL is present instantiate a Shed and save it.
-                var shed = Shed(hunterID: hunterIdentifier, imageID: url, username: currentHunter.username)
+                var shed = Shed(hunterID: hunterIdentifier, imageID: url, username: currentHunter.username,shedMessage: shedMessage)
                 shed.save()
                 
                 // Check for obviously present identifier
@@ -174,7 +174,7 @@ class ShedController {
                 dispatch_group_enter(groupTwo)
                 
                 // Only grab 100 sheds
-                if index <= 100 {
+                if index <= 200 {
                     ShedController.fetchShed(sheds[index], completion: { (shed) -> Void in
                         
                         // If shed is returned append shed to shedsToDisplayArray

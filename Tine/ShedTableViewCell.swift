@@ -9,7 +9,7 @@
 import UIKit
 
 class ShedTableViewCell: UITableViewCell {
-
+    
     // MARK: - IBOutlets
     
     var delegate: TinelineViewController?
@@ -17,13 +17,19 @@ class ShedTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var shedImageView: UIImageView!
     
+    @IBOutlet weak var reportButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var likeShedButton: UIButton!
+    @IBOutlet weak var usernameSmallButton: UIButton!
+    @IBOutlet weak var shedTextLabel: UILabel!
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-       
-
+        
+        
         // Configure the view for the selected state
     }
-
+    
     // MARK: - UI Updating Functions
     
     
@@ -36,7 +42,7 @@ class ShedTableViewCell: UITableViewCell {
     // Update View with passed in shed
     func updateWith(shed: Shed) {
         
-//         self.contentView.backgroundColor = UIColor.desertSkyBlue()
+        //         self.contentView.backgroundColor = UIColor.desertSkyBlue()
         
         // If shed image exists, set shedImageView to image
         if shed.shedImage == nil {
@@ -51,6 +57,13 @@ class ShedTableViewCell: UITableViewCell {
         
         // Set usernameTextField text to passed in shed username
         self.usernameTextField.text = shed.username
+        self.usernameSmallButton.setTitle(shed.username, forState: .Normal)
+        if let shedMessage = shed.shedMessage {
+            self.shedTextLabel.text = shedMessage
+        } else {
+            self.usernameSmallButton.hidden = true
+            self.shedTextLabel.hidden = true
+        }
     }
 }
 
