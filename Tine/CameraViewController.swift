@@ -14,7 +14,7 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     // MARK: - Properties
     
     var image: UIImage?
-    var locationManger: CLLocationManager!
+    var locationManager: CLLocationManager!
     
     // MARK: - IBOutlet Properties
     
@@ -28,6 +28,11 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         // Checks for a current Image ; if not displays camera
         if image == nil {
+            locationManager = CLLocationManager()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.requestLocation()
             displayCamera()
         }
         shedMessageTextField.delegate = self
@@ -36,9 +41,7 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        
+
 
         
         // Do any additional setup after loading the view.
@@ -51,12 +54,17 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
         
         // Guard for image and hunterID and create a new shed
         if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-            ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextField.text, completion: { (success) -> Void in
+            ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextField.text, completion: { (success, shed) -> Void in
                 
                 // If shed creation is successful remove image and (eventually kick to timeline)
                 if success {
-                    
-                    
+                    if let shedID = shed?.identifier, let location = self.locationManager.location {
+                        LocationController.setLocation(shedID, location: location, completion: { (success) -> Void in
+                            if success {
+                                print("yay succes posting location")
+                            }
+                        })
+                    }
                     
                     NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                     self.image = nil
@@ -108,6 +116,14 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print(error)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("Location found in camera view")
     }
     
     

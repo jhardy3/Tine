@@ -1,0 +1,442 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Shed"
+provides-nominal:
+- "C4Tine4Shed"
+provides-member:
+- ["C4Tine4Shed", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "PhotoController"
+- "StringLiteralType"
+- "UIImage"
+- !private "??"
+- !private "Array"
+- "FirebaseType"
+- "String"
+- !private "Dictionary"
+- "Shed"
+- !private "Void"
+- "AnyObject"
+depends-member:
+- !private ["PSs9AnyObject", "Array"]
+- !private ["PSs9AnyObject", "PhotoController"]
+- ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "delete"]
+- ["PSs9AnyObject", "endpoint"]
+- !private ["PSs9AnyObject", "fetchImageAtURL"]
+- !private ["PSs9AnyObject", "hunterIdentifier"]
+- !private ["PSs9AnyObject", "hunterKey"]
+- ["PSs9AnyObject", "identifier"]
+- !private ["PSs9AnyObject", "imageIdentifier"]
+- !private ["PSs9AnyObject", "imageKey"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "jsonValue"]
+- !private ["PSs9AnyObject", "messageIdKey"]
+- !private ["PSs9AnyObject", "messageIdentifiers"]
+- ["PSs9AnyObject", "save"]
+- !private ["PSs9AnyObject", "shedImage"]
+- !private ["PSs9AnyObject", "shedMessage"]
+- !private ["PSs9AnyObject", "shedMessageKey"]
+- !private ["PSs9AnyObject", "username"]
+- !private ["PSs9AnyObject", "usernameKey"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "init"]
+- !private ["Sa", "toDic"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "toDic"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSs14CollectionType", "_Element"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "keys"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs14CollectionType", "toDic"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "_DisabledRangeIndex"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "keys"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "toDic"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "keys"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "toDic"]
+- !private ["VSs10Dictionary", "Generator"]
+- !private ["VSs10Dictionary", "Index"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "SubSequence"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["VSs10Dictionary", "_Element"]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["VSs10Dictionary", "keys"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["VSs19DictionaryGenerator", "Element"]
+- !private ["VSs15DictionaryIndex", "Distance"]
+- !private ["VSs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["PSs28DictionaryLiteralConvertible", "Generator"]
+- !private ["PSs28DictionaryLiteralConvertible", "Index"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "_Element"]
+- !private ["PSs28DictionaryLiteralConvertible", "keys"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "_DisabledRangeIndex"]
+- !private ["P4Tine12FirebaseType", "Array"]
+- !private ["P4Tine12FirebaseType", "PhotoController"]
+- ["P4Tine12FirebaseType", "String"]
+- ["P4Tine12FirebaseType", "delete"]
+- ["P4Tine12FirebaseType", "endpoint"]
+- !private ["P4Tine12FirebaseType", "hunterIdentifier"]
+- !private ["P4Tine12FirebaseType", "hunterKey"]
+- ["P4Tine12FirebaseType", "identifier"]
+- !private ["P4Tine12FirebaseType", "imageIdentifier"]
+- !private ["P4Tine12FirebaseType", "imageKey"]
+- ["P4Tine12FirebaseType", "init"]
+- ["P4Tine12FirebaseType", "jsonValue"]
+- !private ["P4Tine12FirebaseType", "messageIdKey"]
+- !private ["P4Tine12FirebaseType", "messageIdentifiers"]
+- ["P4Tine12FirebaseType", "save"]
+- !private ["P4Tine12FirebaseType", "shedImage"]
+- !private ["P4Tine12FirebaseType", "shedMessage"]
+- !private ["P4Tine12FirebaseType", "shedMessageKey"]
+- !private ["P4Tine12FirebaseType", "username"]
+- !private ["P4Tine12FirebaseType", "usernameKey"]
+- ["P4Tine12FirebaseType", ""]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["PSs9Indexable", "_Element"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "keys"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["PSs9Indexable", "toDic"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs18LazyCollectionType", "Generator"]
+- !private ["VSs17LazyMapCollection", "Generator"]
+- !private ["VSs16LazyMapGenerator", "Element"]
+- !private ["PSs16LazySequenceType", "Generator"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "toDic"]
+- !private ["PSs16MutableIndexable", "Element"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "toDic"]
+- !private ["PSs16MutableSliceable", "Element"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "toDic"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["C4Tine15PhotoController", "fetchImageAtURL"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "toDic"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSs12SequenceType", "_Element"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "keys"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs12SequenceType", "toDic"]
+- ["C4Tine4Shed", "AnyObject"]
+- !private ["C4Tine4Shed", "Array"]
+- !private ["C4Tine4Shed", "PhotoController"]
+- ["C4Tine4Shed", "String"]
+- ["C4Tine4Shed", "UIImage"]
+- !private ["C4Tine4Shed", "Void"]
+- ["C4Tine4Shed", "deinit"]
+- ["C4Tine4Shed", "delete"]
+- ["C4Tine4Shed", "endpoint"]
+- ["C4Tine4Shed", "hunterIdentifier"]
+- !private ["C4Tine4Shed", "hunterKey"]
+- ["C4Tine4Shed", "identifier"]
+- ["C4Tine4Shed", "imageIdentifier"]
+- !private ["C4Tine4Shed", "imageKey"]
+- ["C4Tine4Shed", "init"]
+- ["C4Tine4Shed", "jsonValue"]
+- !private ["C4Tine4Shed", "messageIdKey"]
+- ["C4Tine4Shed", "messageIdentifiers"]
+- ["C4Tine4Shed", "save"]
+- ["C4Tine4Shed", "shedImage"]
+- ["C4Tine4Shed", "shedMessage"]
+- !private ["C4Tine4Shed", "shedMessageKey"]
+- ["C4Tine4Shed", "username"]
+- !private ["C4Tine4Shed", "usernameKey"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["PSs10_ArrayType", "Element"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "toDic"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "toDic"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "keys"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs21_ObjectiveCBridgeable", "toDic"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Key"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "_Element"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "keys"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "toDic"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "VSs19DictionaryGenerator"
+- !private "VSs15DictionaryIndex"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "PSs9Equatable"
+- "P4Tine12FirebaseType"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs18LazyCollectionType"
+- !private "VSs17LazyMapCollection"
+- !private "VSs16LazyMapGenerator"
+- !private "PSs16LazySequenceType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "C4Tine15PhotoController"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- "C4Tine4Shed"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "SS"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GeoFire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FMutableData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/Firebase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FEventType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FConfig.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FAuthType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/FAuthData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFQuery+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFGeoHashQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFGeoHash.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFBase32Utils.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GeoFire+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GeoFire.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSReachability.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3Resources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3Model.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoSyncResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoSync.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognitoService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognito.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Modules/module.modulemap"
+interface-hash: "75d68f03404912a9e03cbad0ba8f5e78"

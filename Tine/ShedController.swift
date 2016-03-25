@@ -38,11 +38,11 @@ class ShedController {
                 currentHunter.save()
                 
                 // Complete true
-                completion(success: true)
+                completion(success: true, shed: shed)
             } else {
                 
                 // If url is not present complete false
-                completion(success: false)
+                completion(success: false, shed: nil)
             }
         }
     }

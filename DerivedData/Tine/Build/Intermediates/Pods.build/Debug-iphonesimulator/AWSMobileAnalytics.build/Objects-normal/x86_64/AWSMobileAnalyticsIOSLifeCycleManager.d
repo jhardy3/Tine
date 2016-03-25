@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/JLH/Desktop/Personal\ Projects/Tine/Pods/AWSMobileAnalytics/AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSLifeCycleManager.m \
+  /Users/JLH/Desktop/Personal\ Projects/Tine/Pods/Target\ Support\ Files/AWSMobileAnalytics/AWSMobileAnalytics-prefix.pch \
+  /Users/JLH/Desktop/Personal\ Projects/Tine/Pods/AWSMobileAnalytics/AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSLifeCycleManager.h \
+  /Users/JLH/Desktop/Personal\ Projects/Tine/Pods/AWSMobileAnalytics/AWSMobileAnalytics/Internal/AWSMobileAnalyticsLifeCycleManager.h

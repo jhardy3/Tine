@@ -1,0 +1,713 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchResultsTableViewController"
+provides-nominal:
+- "C4Tine32SearchResultsTableViewController"
+provides-member:
+- ["C4Tine32SearchResultsTableViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "tableView"
+- "tableView"
+- "tableView"
+depends-top-level:
+- "NSIndexPath"
+- !private "StringLiteralType"
+- "Int"
+- "Hunter"
+- "UITableView"
+- "UITableViewController"
+- "SearchResultsTableViewController"
+- "UITableViewCell"
+depends-member:
+- ["PSs9AnyObject", "Hunter"]
+- !private ["PSs9AnyObject", "cellForRowAtIndexPath"]
+- !private ["PSs9AnyObject", "dataSource"]
+- !private ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- !private ["PSs9AnyObject", "presentingViewController"]
+- !private ["PSs9AnyObject", "row"]
+- ["PSs9AnyObject", "tableView"]
+- !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "textLabel"]
+- !private ["PSs9AnyObject", "username"]
+- ["PSs9AnyObject", "usersResultsDataSource"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "Hunter"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "cellForRowAtIndexPath"]
+- !private ["PSs11CVarArgType", "dataSource"]
+- !private ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- !private ["PSs11CVarArgType", "presentingViewController"]
+- !private ["PSs11CVarArgType", "row"]
+- ["PSs11CVarArgType", "tableView"]
+- !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "textLabel"]
+- ["PSs11CVarArgType", "usersResultsDataSource"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- ["PSs23CustomStringConvertible", "Hunter"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "cellForRowAtIndexPath"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "dataSource"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "presentingViewController"]
+- !private ["PSs23CustomStringConvertible", "row"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "tableView"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "textLabel"]
+- ["PSs23CustomStringConvertible", "usersResultsDataSource"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Hunter"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "cellForRowAtIndexPath"]
+- !private ["PSs9Equatable", "dataSource"]
+- !private ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- !private ["PSs9Equatable", "presentingViewController"]
+- !private ["PSs9Equatable", "row"]
+- ["PSs9Equatable", "tableView"]
+- !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "textLabel"]
+- ["PSs9Equatable", "usersResultsDataSource"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["P4Tine12FirebaseType", "username"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Hunter"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "cellForRowAtIndexPath"]
+- !private ["PSs8Hashable", "dataSource"]
+- !private ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- !private ["PSs8Hashable", "presentingViewController"]
+- !private ["PSs8Hashable", "row"]
+- ["PSs8Hashable", "tableView"]
+- !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "textLabel"]
+- ["PSs8Hashable", "usersResultsDataSource"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["C4Tine6Hunter", "deinit"]
+- !private ["C4Tine6Hunter", "username"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- ["PSo8NSCoding", "Hunter"]
+- !private ["PSo8NSCoding", "cellForRowAtIndexPath"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- !private ["PSo8NSCoding", "presentingViewController"]
+- !private ["PSo8NSCoding", "row"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textLabel"]
+- ["PSo8NSCoding", "usersResultsDataSource"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "row"]
+- ["PSo26NSExtensionRequestHandling", "Hunter"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- !private ["PSo26NSExtensionRequestHandling", "presentingViewController"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "usersResultsDataSource"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSIndexPath", "row"]
+- ["CSo8NSObject", "Hunter"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "cellForRowAtIndexPath"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- !private ["CSo8NSObject", "presentingViewController"]
+- !private ["CSo8NSObject", "row"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textLabel"]
+- ["CSo8NSObject", "usersResultsDataSource"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Hunter"]
+- !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "presentingViewController"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textLabel"]
+- ["PSo16NSObjectProtocol", "usersResultsDataSource"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "row"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- ["C4Tine32SearchResultsTableViewController", "Hunter"]
+- ["C4Tine32SearchResultsTableViewController", "Int"]
+- ["C4Tine32SearchResultsTableViewController", "NSIndexPath"]
+- ["C4Tine32SearchResultsTableViewController", "UITableView"]
+- ["C4Tine32SearchResultsTableViewController", "UITableViewCell"]
+- ["C4Tine32SearchResultsTableViewController", "deinit"]
+- ["C4Tine32SearchResultsTableViewController", "init"]
+- ["C4Tine32SearchResultsTableViewController", "numberOfSectionsInTableView"]
+- !private ["C4Tine32SearchResultsTableViewController", "presentingViewController"]
+- ["C4Tine32SearchResultsTableViewController", "tableView"]
+- ["C4Tine32SearchResultsTableViewController", "usersResultsDataSource"]
+- ["C4Tine32SearchResultsTableViewController", "viewDidLoad"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "cellForRowAtIndexPath"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textLabel"]
+- !private ["PSo12UIAppearance", "cellForRowAtIndexPath"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textLabel"]
+- ["PSo21UIAppearanceContainer", "Hunter"]
+- !private ["PSo21UIAppearanceContainer", "cellForRowAtIndexPath"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "presentingViewController"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textLabel"]
+- ["PSo21UIAppearanceContainer", "usersResultsDataSource"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Hunter"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- !private ["PSo18UIContentContainer", "presentingViewController"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "usersResultsDataSource"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "cellForRowAtIndexPath"]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textLabel"]
+- !private ["PSo13UIDynamicItem", "cellForRowAtIndexPath"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textLabel"]
+- ["PSo18UIFocusEnvironment", "Hunter"]
+- !private ["PSo18UIFocusEnvironment", "cellForRowAtIndexPath"]
+- !private ["PSo18UIFocusEnvironment", "dataSource"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "presentingViewController"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textLabel"]
+- ["PSo18UIFocusEnvironment", "usersResultsDataSource"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Hunter"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "cellForRowAtIndexPath"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- !private ["CSo11UIResponder", "presentingViewController"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textLabel"]
+- ["CSo11UIResponder", "usersResultsDataSource"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "cellForRowAtIndexPath"]
+- !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "delegate"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- ["PSo20UIScrollViewDelegate", "Hunter"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "presentingViewController"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "usersResultsDataSource"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- ["PSo16UIStateRestoring", "Hunter"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- !private ["PSo16UIStateRestoring", "presentingViewController"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "usersResultsDataSource"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "cellForRowAtIndexPath"]
+- !private ["CSo11UITableView", "dataSource"]
+- !private ["CSo11UITableView", "delegate"]
+- !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo15UITableViewCell", "textLabel"]
+- ["CSo21UITableViewController", "Hunter"]
+- ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "NSIndexPath"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "numberOfSectionsInTableView"]
+- !private ["CSo21UITableViewController", "presentingViewController"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "usersResultsDataSource"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- ["PSo21UITableViewDataSource", "Hunter"]
+- ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "presentingViewController"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "usersResultsDataSource"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- ["PSo19UITableViewDelegate", "Hunter"]
+- ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
+- !private ["PSo19UITableViewDelegate", "presentingViewController"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "usersResultsDataSource"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- ["PSo18UITraitEnvironment", "Hunter"]
+- !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "presentingViewController"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textLabel"]
+- ["PSo18UITraitEnvironment", "usersResultsDataSource"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "cellForRowAtIndexPath"]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textLabel"]
+- ["CSo16UIViewController", "Hunter"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- !private ["CSo16UIViewController", "presentingViewController"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "usersResultsDataSource"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "cellForRowAtIndexPath"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dataSource"]
+- !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "textLabel"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "P4Tine12FirebaseType"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "C4Tine6Hunter"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSIndexPath"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- "C4Tine32SearchResultsTableViewController"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GeoFire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FMutableData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FEventType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FConfig.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFQuery+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFGeoHashQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFGeoHash.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFBase32Utils.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSReachability.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Resources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Model.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSync.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Modules/module.modulemap"
+interface-hash: "015d9d317f927878fb06fccaebf7df6f"

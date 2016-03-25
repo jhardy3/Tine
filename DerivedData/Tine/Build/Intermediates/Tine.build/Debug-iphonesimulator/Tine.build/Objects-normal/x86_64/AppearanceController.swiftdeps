@@ -1,0 +1,268 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppearanceController"
+provides-nominal:
+- "C4Tine20AppearanceController"
+provides-member:
+- ["C4Tine20AppearanceController", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AppearanceController"
+- !private "UISegmentedControl"
+- !private "UIColor"
+- !private "UINavigationBar"
+- !private "UIToolbar"
+depends-member:
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UINavigationBar"]
+- !private ["PSs9AnyObject", "UISegmentedControl"]
+- !private ["PSs9AnyObject", "UIToolbar"]
+- !private ["PSs9AnyObject", "appearance"]
+- !private ["PSs9AnyObject", "barTintColor"]
+- !private ["PSs9AnyObject", "hunterOrange"]
+- !private ["PSs9AnyObject", "tintColor"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- ["PSs9AnyObject", ""]
+- !private ["C4Tine20AppearanceController", "UIColor"]
+- !private ["C4Tine20AppearanceController", "UINavigationBar"]
+- !private ["C4Tine20AppearanceController", "UISegmentedControl"]
+- !private ["C4Tine20AppearanceController", "UIToolbar"]
+- ["C4Tine20AppearanceController", "deinit"]
+- ["C4Tine20AppearanceController", "init"]
+- ["C4Tine20AppearanceController", "initializaeAppearanceDefaults"]
+- !private ["PSs11CVarArgType", "appearance"]
+- !private ["PSs11CVarArgType", "barTintColor"]
+- !private ["PSs11CVarArgType", "hunterOrange"]
+- !private ["PSs11CVarArgType", "tintColor"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- !private ["PSs23CustomStringConvertible", "appearance"]
+- !private ["PSs23CustomStringConvertible", "barTintColor"]
+- !private ["PSs23CustomStringConvertible", "hunterOrange"]
+- !private ["PSs23CustomStringConvertible", "tintColor"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- !private ["PSs9Equatable", "appearance"]
+- !private ["PSs9Equatable", "barTintColor"]
+- !private ["PSs9Equatable", "hunterOrange"]
+- !private ["PSs9Equatable", "tintColor"]
+- !private ["PSs9Equatable", "whiteColor"]
+- !private ["PSs8Hashable", "appearance"]
+- !private ["PSs8Hashable", "barTintColor"]
+- !private ["PSs8Hashable", "hunterOrange"]
+- !private ["PSs8Hashable", "tintColor"]
+- !private ["PSs8Hashable", "whiteColor"]
+- !private ["PSo8NSCoding", "appearance"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "hunterOrange"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "hunterOrange"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo8NSObject", "appearance"]
+- !private ["CSo8NSObject", "barTintColor"]
+- !private ["CSo8NSObject", "hunterOrange"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "hunterOrange"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "hunterOrange"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo16UIBarPositioning", "appearance"]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["CSo7UIColor", "hunterOrange"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["CSo9UIControl", "appearance"]
+- !private ["CSo9UIControl", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["CSo15UINavigationBar", "appearance"]
+- !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo11UIResponder", "appearance"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo18UISegmentedControl", "appearance"]
+- !private ["CSo18UISegmentedControl", "tintColor"]
+- !private ["CSo9UIToolbar", "appearance"]
+- !private ["CSo9UIToolbar", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["PSs24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
+- !private ["PSs12_Reflectable", "appearance"]
+- !private ["PSs12_Reflectable", "barTintColor"]
+- !private ["PSs12_Reflectable", "tintColor"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C4Tine20AppearanceController"
+- !private "PSs11CVarArgType"
+- !private "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo15UINavigationBar"
+- !private "CSo11UIResponder"
+- !private "CSo18UISegmentedControl"
+- !private "CSo9UIToolbar"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "PSs24_ColorLiteralConvertible"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GeoFire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/Pods/GeoFire/GeoFire/API/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseServerValue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FTransactionResult.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FMutableData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FirebaseApp.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FEventType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FDataSnapshot.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FConfig.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthType.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/FAuthData.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFQuery+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFGeoHashQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFGeoHash.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFBase32Utils.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire+Private.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFRegionQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSReachability.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Resources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Model.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncResources.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSync.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoService.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
+- "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Modules/module.modulemap"
+interface-hash: "9dae05aed4bc6e162940d03281ce4c63"

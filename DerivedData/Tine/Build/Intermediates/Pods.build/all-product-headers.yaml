@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSAutoScaling.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSAutoScaling.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSAutoScaling-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSAutoScaling.framework/Headers/AWSAutoScaling-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSAutoScaling.framework/Headers/AWSAutoScaling-Swift.h"
         },
         {
           'type': 'file',
@@ -40,23 +40,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSAutoScaling.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSAutoScaling.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSAutoScaling.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSAutoScaling.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCloudWatch.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCloudWatch.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSCloudWatch-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCloudWatch.framework/Headers/AWSCloudWatch-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCloudWatch.framework/Headers/AWSCloudWatch-Swift.h"
         },
         {
           'type': 'file',
@@ -87,23 +87,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCloudWatch.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCloudWatch.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSCloudWatch.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSCloudWatch.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSCognito-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Headers/AWSCognito-Swift.h"
         },
         {
           'type': 'file',
@@ -164,18 +164,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSCognito.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSCognito.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/PrivateHeaders",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCognito.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -231,7 +231,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -291,7 +291,7 @@
         {
           'type': 'file',
           'name': "AWSCore-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Headers/AWSCore-Swift.h"
         },
         {
           'type': 'file',
@@ -547,18 +547,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSCore.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSCore.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCore.framework/PrivateHeaders",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSCore.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -619,12 +619,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSDynamoDB.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSDynamoDB.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSDynamoDB-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSDynamoDB.framework/Headers/AWSDynamoDB-Swift.h"
         },
         {
           'type': 'file',
@@ -660,23 +660,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSDynamoDB.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSDynamoDB.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSDynamoDB.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSDynamoDB.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSEC2.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSEC2.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSEC2-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSEC2.framework/Headers/AWSEC2-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSEC2.framework/Headers/AWSEC2-Swift.h"
         },
         {
           'type': 'file',
@@ -707,23 +707,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSEC2.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSEC2.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSEC2.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSEC2.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSElasticLoadBalancing.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSElasticLoadBalancing.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSElasticLoadBalancing-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSElasticLoadBalancing.framework/Headers/AWSElasticLoadBalancing-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSElasticLoadBalancing.framework/Headers/AWSElasticLoadBalancing-Swift.h"
         },
         {
           'type': 'file',
@@ -754,23 +754,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSElasticLoadBalancing.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSElasticLoadBalancing.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSElasticLoadBalancing.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSElasticLoadBalancing.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSIoT.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSIoT.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSIoT-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSIoT.framework/Headers/AWSIoT-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSIoT.framework/Headers/AWSIoT-Swift.h"
         },
         {
           'type': 'file',
@@ -861,18 +861,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSIoT.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSIoT.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSIoT.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSIoT.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSIoT.framework/PrivateHeaders",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSIoT.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -898,7 +898,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSKinesis.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSKinesis.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -933,7 +933,7 @@
         {
           'type': 'file',
           'name': "AWSKinesis-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSKinesis.framework/Headers/AWSKinesis-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSKinesis.framework/Headers/AWSKinesis-Swift.h"
         },
         {
           'type': 'file',
@@ -969,23 +969,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSKinesis.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSKinesis.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSKinesis.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSKinesis.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSLambda.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSLambda.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSLambda-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSLambda.framework/Headers/AWSLambda-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSLambda.framework/Headers/AWSLambda-Swift.h"
         },
         {
           'type': 'file',
@@ -1021,23 +1021,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSLambda.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSLambda.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSLambda.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSLambda.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMachineLearning.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMachineLearning.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSMachineLearning-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMachineLearning.framework/Headers/AWSMachineLearning-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMachineLearning.framework/Headers/AWSMachineLearning-Swift.h"
         },
         {
           'type': 'file',
@@ -1068,23 +1068,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMachineLearning.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMachineLearning.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSMachineLearning.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSMachineLearning.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMobileAnalytics.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMobileAnalytics.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSMobileAnalytics-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMobileAnalytics.framework/Headers/AWSMobileAnalytics-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMobileAnalytics.framework/Headers/AWSMobileAnalytics-Swift.h"
         },
         {
           'type': 'file',
@@ -1160,18 +1160,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMobileAnalytics.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMobileAnalytics.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSMobileAnalytics.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSMobileAnalytics.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSMobileAnalytics.framework/PrivateHeaders",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSMobileAnalytics.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -1472,12 +1472,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSS3-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Headers/AWSS3-Swift.h"
         },
         {
           'type': 'file',
@@ -1523,23 +1523,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSS3.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSS3.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSS3.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSS3.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSES.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSES.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSSES-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSES.framework/Headers/AWSSES-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSES.framework/Headers/AWSSES-Swift.h"
         },
         {
           'type': 'file',
@@ -1570,23 +1570,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSES.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSES.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSSES.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSSES.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSNS.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSNS.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSSNS-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNS-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSNS.framework/Headers/AWSSNS-Swift.h"
         },
         {
           'type': 'file',
@@ -1617,23 +1617,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSNS.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSNS.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSSNS.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSSNS.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSQS.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSQS.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSSQS-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQS-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSQS.framework/Headers/AWSSQS-Swift.h"
         },
         {
           'type': 'file',
@@ -1664,23 +1664,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSQS.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSQS.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSSQS.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSSQS.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSimpleDB.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSimpleDB.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AWSSimpleDB-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSimpleDB.framework/Headers/AWSSimpleDB-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSimpleDB.framework/Headers/AWSSimpleDB-Swift.h"
         },
         {
           'type': 'file',
@@ -1711,18 +1711,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSSimpleDB.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/AWSSimpleDB.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/AWSSimpleDB.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/AWSSimpleDB.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1767,7 +1767,7 @@
         {
           'type': 'file',
           'name': "Firebase-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Headers/Firebase-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Headers/Firebase-Swift.h"
         },
         {
           'type': 'file',
@@ -1793,18 +1793,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Firebase.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Firebase.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/Firebase.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/Firebase.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1849,7 +1849,7 @@
         {
           'type': 'file',
           'name': "GeoFire-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Headers/GeoFire-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Headers/GeoFire-Swift.h"
         },
         {
           'type': 'file',
@@ -1865,18 +1865,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/GeoFire.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/GeoFire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/GeoFire.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/GeoFire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Pods_Tine.framework/Headers",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Pods_Tine.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1886,18 +1886,18 @@
         {
           'type': 'file',
           'name': "Pods_Tine-Swift.h",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Pods_Tine.framework/Headers/Pods_Tine-Swift.h"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Pods_Tine.framework/Headers/Pods_Tine-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/Pods_Tine.framework/Modules",
+      'name': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphoneos/Pods_Tine.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Tine.build/module.modulemap"
+          'external-contents': "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Tine.build/module.modulemap"
         }
       ]
     }
