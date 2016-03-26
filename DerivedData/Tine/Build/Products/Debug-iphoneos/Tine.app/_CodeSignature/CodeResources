@@ -4,9 +4,57 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		9amANKlLbQ89tdVcCiaL1S9/4YQ=
+		</data>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		9amANKlLbQ89tdVcCiaL1S9/4YQ=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		l3ydplgitfBkGZ9lQN8lu3uqSdQ=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		A1pXRnXNbGoOcnsJ4vwVkAqXXzo=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		Jf8fOkZRj6vtRkqRUPXNchFqQnU=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		Jf8fOkZRj6vtRkqRUPXNchFqQnU=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		4wylAB8rc54EMAoYO65gd4+KYEw=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		34MeV3RdDJ9gbdoIzSGKBV5bnRg=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		4wylAB8rc54EMAoYO65gd4+KYEw=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		MQvFgDb3ss3oPpJLLdF3uzeY67Q=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		GyoaDBSLyttMRYMeVbdKW4fMGsc=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		be3Hy6nK0iV4WzBt8x9l4DwNl4Y=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		g+sggnqL8WW5IMWO/9LzHP44kD4=
+		8i9VQL8PiFxBrdEZ28LI/R/c2Tk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
@@ -145,7 +193,7 @@
 		</dict>
 		<key>Frameworks/AWSAutoScaling.framework/AWSAutoScaling</key>
 		<data>
-		RSC5PE9sQocmb7rA8n3FUAN5NsY=
+		CSnG4W8qdkptiR89D28j7QxCi2M=
 		</data>
 		<key>Frameworks/AWSAutoScaling.framework/Info.plist</key>
 		<data>
@@ -157,7 +205,7 @@
 		</data>
 		<key>Frameworks/AWSCloudWatch.framework/AWSCloudWatch</key>
 		<data>
-		yyQHxd/m0a922nn8+B1633/7WFc=
+		SdVsga4OJw75gK3WRd/ZLthXaQA=
 		</data>
 		<key>Frameworks/AWSCloudWatch.framework/Info.plist</key>
 		<data>
@@ -169,7 +217,7 @@
 		</data>
 		<key>Frameworks/AWSCognito.framework/AWSCognito</key>
 		<data>
-		Qk2WOMK6G7jyGYGpGm0KHEdutAo=
+		prgxYhXy65aixpF8iuuRJ/zHtrA=
 		</data>
 		<key>Frameworks/AWSCognito.framework/Info.plist</key>
 		<data>
@@ -181,7 +229,7 @@
 		</data>
 		<key>Frameworks/AWSCore.framework/AWSCore</key>
 		<data>
-		3gKmw519R3/q0o0WRBl5mrrrOys=
+		BLVI7KjX2DCoB8slPgcshzm6FTc=
 		</data>
 		<key>Frameworks/AWSCore.framework/Info.plist</key>
 		<data>
@@ -193,7 +241,7 @@
 		</data>
 		<key>Frameworks/AWSDynamoDB.framework/AWSDynamoDB</key>
 		<data>
-		z+vTHm9ezwYeGAJPYduE91IQyZU=
+		MgBSnZ6YNnnz9ffDt23biRttlGw=
 		</data>
 		<key>Frameworks/AWSDynamoDB.framework/Info.plist</key>
 		<data>
@@ -205,7 +253,7 @@
 		</data>
 		<key>Frameworks/AWSEC2.framework/AWSEC2</key>
 		<data>
-		PUFY2yXlIK+m/pMOGRoachzu+z8=
+		iBo9n+LpydPcwvg5mnNP989ahkc=
 		</data>
 		<key>Frameworks/AWSEC2.framework/Info.plist</key>
 		<data>
@@ -217,7 +265,7 @@
 		</data>
 		<key>Frameworks/AWSElasticLoadBalancing.framework/AWSElasticLoadBalancing</key>
 		<data>
-		rajNvL1fSUnA0ImtayaL2sgD7nw=
+		EhS6ninSe9L0CdGm62bEC9+FbiQ=
 		</data>
 		<key>Frameworks/AWSElasticLoadBalancing.framework/Info.plist</key>
 		<data>
@@ -229,7 +277,7 @@
 		</data>
 		<key>Frameworks/AWSIoT.framework/AWSIoT</key>
 		<data>
-		rvtNd6Mmg0EsUft/bUL2PMaE/UQ=
+		vbnAlWhj/gKmfE8s2dD9fySgacI=
 		</data>
 		<key>Frameworks/AWSIoT.framework/Info.plist</key>
 		<data>
@@ -241,7 +289,7 @@
 		</data>
 		<key>Frameworks/AWSKinesis.framework/AWSKinesis</key>
 		<data>
-		q3keCUWVTopMT/ANqTX5Zdy6fKU=
+		rVu7D2Ym4Fo+9qUs2mkJsu2UScc=
 		</data>
 		<key>Frameworks/AWSKinesis.framework/Info.plist</key>
 		<data>
@@ -253,7 +301,7 @@
 		</data>
 		<key>Frameworks/AWSLambda.framework/AWSLambda</key>
 		<data>
-		xhaUMvrK9sLgHxa0FjGCdzVymwA=
+		LtyYbUBLC3y8DfEFDZQAZN7Ri6M=
 		</data>
 		<key>Frameworks/AWSLambda.framework/Info.plist</key>
 		<data>
@@ -265,7 +313,7 @@
 		</data>
 		<key>Frameworks/AWSMachineLearning.framework/AWSMachineLearning</key>
 		<data>
-		iPYFvTF3AqVzX4DrAQFIMC+Q/C4=
+		tZ9csKzSfNyQiU8VpEv/7g34JFU=
 		</data>
 		<key>Frameworks/AWSMachineLearning.framework/Info.plist</key>
 		<data>
@@ -277,7 +325,7 @@
 		</data>
 		<key>Frameworks/AWSMobileAnalytics.framework/AWSMobileAnalytics</key>
 		<data>
-		f/heviw2XkgMfzOm68uiV5IHU2Q=
+		0j3c6Gr4Ib9KU8awpE8163tV6Yc=
 		</data>
 		<key>Frameworks/AWSMobileAnalytics.framework/Info.plist</key>
 		<data>
@@ -289,7 +337,7 @@
 		</data>
 		<key>Frameworks/AWSS3.framework/AWSS3</key>
 		<data>
-		K6cvbtfzCkjrKHMbBQXS3u/k/HE=
+		kspgZk5Fdo1R99LxE0R30A2ABLQ=
 		</data>
 		<key>Frameworks/AWSS3.framework/Info.plist</key>
 		<data>
@@ -301,7 +349,7 @@
 		</data>
 		<key>Frameworks/AWSSES.framework/AWSSES</key>
 		<data>
-		awXm65kHlZBNyk8AlTVGsD8DHws=
+		PcbdPlf2cZVkGaMFzgvl8o1lZGE=
 		</data>
 		<key>Frameworks/AWSSES.framework/Info.plist</key>
 		<data>
@@ -313,7 +361,7 @@
 		</data>
 		<key>Frameworks/AWSSNS.framework/AWSSNS</key>
 		<data>
-		kfLLDnWOYboFDvXOAf+H6rOzLBo=
+		F+eJGWpuFKmpVGWUG30Ljk0HE2s=
 		</data>
 		<key>Frameworks/AWSSNS.framework/Info.plist</key>
 		<data>
@@ -325,7 +373,7 @@
 		</data>
 		<key>Frameworks/AWSSQS.framework/AWSSQS</key>
 		<data>
-		Eqo+bvW21MSNMbvevnecRfn2WWk=
+		pLbQMqjO00FMqPhMC2l2N/pqzZ4=
 		</data>
 		<key>Frameworks/AWSSQS.framework/Info.plist</key>
 		<data>
@@ -337,7 +385,7 @@
 		</data>
 		<key>Frameworks/AWSSimpleDB.framework/AWSSimpleDB</key>
 		<data>
-		6c5ALiKFShgFO6dWBbU0/OtHsZw=
+		tmsHksokRtSa3Ej6glNls0HAsbk=
 		</data>
 		<key>Frameworks/AWSSimpleDB.framework/Info.plist</key>
 		<data>
@@ -349,7 +397,7 @@
 		</data>
 		<key>Frameworks/Firebase.framework/Firebase</key>
 		<data>
-		tteSlOcaKuwbeZfx0/V1aUEMZFc=
+		p/kMGNty7DtsiXkRIboSmOftrrQ=
 		</data>
 		<key>Frameworks/Firebase.framework/Info.plist</key>
 		<data>
@@ -361,7 +409,7 @@
 		</data>
 		<key>Frameworks/GeoFire.framework/GeoFire</key>
 		<data>
-		x0C1a3ooIIPeX9SohEZy9sLl6Cg=
+		u4ouphTJ9r9JMvtYj683g16vECY=
 		</data>
 		<key>Frameworks/GeoFire.framework/Info.plist</key>
 		<data>
@@ -417,7 +465,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fAIJT1pvK7mqGZNlvD+g4Wd9PxM=
+		Ig5ilv6VVvl+15aN7kIjMOad23U=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -430,9 +478,57 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		9amANKlLbQ89tdVcCiaL1S9/4YQ=
+		</data>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		9amANKlLbQ89tdVcCiaL1S9/4YQ=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		l3ydplgitfBkGZ9lQN8lu3uqSdQ=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		A1pXRnXNbGoOcnsJ4vwVkAqXXzo=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		Jf8fOkZRj6vtRkqRUPXNchFqQnU=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		Jf8fOkZRj6vtRkqRUPXNchFqQnU=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		4wylAB8rc54EMAoYO65gd4+KYEw=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		34MeV3RdDJ9gbdoIzSGKBV5bnRg=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		4wylAB8rc54EMAoYO65gd4+KYEw=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		MQvFgDb3ss3oPpJLLdF3uzeY67Q=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		GyoaDBSLyttMRYMeVbdKW4fMGsc=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		be3Hy6nK0iV4WzBt8x9l4DwNl4Y=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		g+sggnqL8WW5IMWO/9LzHP44kD4=
+		8i9VQL8PiFxBrdEZ28LI/R/c2Tk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
@@ -571,7 +667,7 @@
 		</dict>
 		<key>Frameworks/AWSAutoScaling.framework/AWSAutoScaling</key>
 		<data>
-		RSC5PE9sQocmb7rA8n3FUAN5NsY=
+		CSnG4W8qdkptiR89D28j7QxCi2M=
 		</data>
 		<key>Frameworks/AWSAutoScaling.framework/Info.plist</key>
 		<data>
@@ -583,7 +679,7 @@
 		</data>
 		<key>Frameworks/AWSCloudWatch.framework/AWSCloudWatch</key>
 		<data>
-		yyQHxd/m0a922nn8+B1633/7WFc=
+		SdVsga4OJw75gK3WRd/ZLthXaQA=
 		</data>
 		<key>Frameworks/AWSCloudWatch.framework/Info.plist</key>
 		<data>
@@ -595,7 +691,7 @@
 		</data>
 		<key>Frameworks/AWSCognito.framework/AWSCognito</key>
 		<data>
-		Qk2WOMK6G7jyGYGpGm0KHEdutAo=
+		prgxYhXy65aixpF8iuuRJ/zHtrA=
 		</data>
 		<key>Frameworks/AWSCognito.framework/Info.plist</key>
 		<data>
@@ -607,7 +703,7 @@
 		</data>
 		<key>Frameworks/AWSCore.framework/AWSCore</key>
 		<data>
-		3gKmw519R3/q0o0WRBl5mrrrOys=
+		BLVI7KjX2DCoB8slPgcshzm6FTc=
 		</data>
 		<key>Frameworks/AWSCore.framework/Info.plist</key>
 		<data>
@@ -619,7 +715,7 @@
 		</data>
 		<key>Frameworks/AWSDynamoDB.framework/AWSDynamoDB</key>
 		<data>
-		z+vTHm9ezwYeGAJPYduE91IQyZU=
+		MgBSnZ6YNnnz9ffDt23biRttlGw=
 		</data>
 		<key>Frameworks/AWSDynamoDB.framework/Info.plist</key>
 		<data>
@@ -631,7 +727,7 @@
 		</data>
 		<key>Frameworks/AWSEC2.framework/AWSEC2</key>
 		<data>
-		PUFY2yXlIK+m/pMOGRoachzu+z8=
+		iBo9n+LpydPcwvg5mnNP989ahkc=
 		</data>
 		<key>Frameworks/AWSEC2.framework/Info.plist</key>
 		<data>
@@ -643,7 +739,7 @@
 		</data>
 		<key>Frameworks/AWSElasticLoadBalancing.framework/AWSElasticLoadBalancing</key>
 		<data>
-		rajNvL1fSUnA0ImtayaL2sgD7nw=
+		EhS6ninSe9L0CdGm62bEC9+FbiQ=
 		</data>
 		<key>Frameworks/AWSElasticLoadBalancing.framework/Info.plist</key>
 		<data>
@@ -655,7 +751,7 @@
 		</data>
 		<key>Frameworks/AWSIoT.framework/AWSIoT</key>
 		<data>
-		rvtNd6Mmg0EsUft/bUL2PMaE/UQ=
+		vbnAlWhj/gKmfE8s2dD9fySgacI=
 		</data>
 		<key>Frameworks/AWSIoT.framework/Info.plist</key>
 		<data>
@@ -667,7 +763,7 @@
 		</data>
 		<key>Frameworks/AWSKinesis.framework/AWSKinesis</key>
 		<data>
-		q3keCUWVTopMT/ANqTX5Zdy6fKU=
+		rVu7D2Ym4Fo+9qUs2mkJsu2UScc=
 		</data>
 		<key>Frameworks/AWSKinesis.framework/Info.plist</key>
 		<data>
@@ -679,7 +775,7 @@
 		</data>
 		<key>Frameworks/AWSLambda.framework/AWSLambda</key>
 		<data>
-		xhaUMvrK9sLgHxa0FjGCdzVymwA=
+		LtyYbUBLC3y8DfEFDZQAZN7Ri6M=
 		</data>
 		<key>Frameworks/AWSLambda.framework/Info.plist</key>
 		<data>
@@ -691,7 +787,7 @@
 		</data>
 		<key>Frameworks/AWSMachineLearning.framework/AWSMachineLearning</key>
 		<data>
-		iPYFvTF3AqVzX4DrAQFIMC+Q/C4=
+		tZ9csKzSfNyQiU8VpEv/7g34JFU=
 		</data>
 		<key>Frameworks/AWSMachineLearning.framework/Info.plist</key>
 		<data>
@@ -703,7 +799,7 @@
 		</data>
 		<key>Frameworks/AWSMobileAnalytics.framework/AWSMobileAnalytics</key>
 		<data>
-		f/heviw2XkgMfzOm68uiV5IHU2Q=
+		0j3c6Gr4Ib9KU8awpE8163tV6Yc=
 		</data>
 		<key>Frameworks/AWSMobileAnalytics.framework/Info.plist</key>
 		<data>
@@ -715,7 +811,7 @@
 		</data>
 		<key>Frameworks/AWSS3.framework/AWSS3</key>
 		<data>
-		K6cvbtfzCkjrKHMbBQXS3u/k/HE=
+		kspgZk5Fdo1R99LxE0R30A2ABLQ=
 		</data>
 		<key>Frameworks/AWSS3.framework/Info.plist</key>
 		<data>
@@ -727,7 +823,7 @@
 		</data>
 		<key>Frameworks/AWSSES.framework/AWSSES</key>
 		<data>
-		awXm65kHlZBNyk8AlTVGsD8DHws=
+		PcbdPlf2cZVkGaMFzgvl8o1lZGE=
 		</data>
 		<key>Frameworks/AWSSES.framework/Info.plist</key>
 		<data>
@@ -739,7 +835,7 @@
 		</data>
 		<key>Frameworks/AWSSNS.framework/AWSSNS</key>
 		<data>
-		kfLLDnWOYboFDvXOAf+H6rOzLBo=
+		F+eJGWpuFKmpVGWUG30Ljk0HE2s=
 		</data>
 		<key>Frameworks/AWSSNS.framework/Info.plist</key>
 		<data>
@@ -751,7 +847,7 @@
 		</data>
 		<key>Frameworks/AWSSQS.framework/AWSSQS</key>
 		<data>
-		Eqo+bvW21MSNMbvevnecRfn2WWk=
+		pLbQMqjO00FMqPhMC2l2N/pqzZ4=
 		</data>
 		<key>Frameworks/AWSSQS.framework/Info.plist</key>
 		<data>
@@ -763,7 +859,7 @@
 		</data>
 		<key>Frameworks/AWSSimpleDB.framework/AWSSimpleDB</key>
 		<data>
-		6c5ALiKFShgFO6dWBbU0/OtHsZw=
+		tmsHksokRtSa3Ej6glNls0HAsbk=
 		</data>
 		<key>Frameworks/AWSSimpleDB.framework/Info.plist</key>
 		<data>
@@ -775,7 +871,7 @@
 		</data>
 		<key>Frameworks/Firebase.framework/Firebase</key>
 		<data>
-		tteSlOcaKuwbeZfx0/V1aUEMZFc=
+		p/kMGNty7DtsiXkRIboSmOftrrQ=
 		</data>
 		<key>Frameworks/Firebase.framework/Info.plist</key>
 		<data>
@@ -787,7 +883,7 @@
 		</data>
 		<key>Frameworks/GeoFire.framework/GeoFire</key>
 		<data>
-		x0C1a3ooIIPeX9SohEZy9sLl6Cg=
+		u4ouphTJ9r9JMvtYj683g16vECY=
 		</data>
 		<key>Frameworks/GeoFire.framework/Info.plist</key>
 		<data>

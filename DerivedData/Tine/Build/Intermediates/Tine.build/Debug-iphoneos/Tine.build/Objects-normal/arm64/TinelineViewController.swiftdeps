@@ -6,62 +6,62 @@ provides-nominal:
 provides-member:
 - ["C4Tine22TinelineViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
 - "shedIDs"
 - "viewDidLoad"
-- "refresh"
-- "segmentedControlChanged"
 - "locationManager"
 - "locationManager"
 - "locationManager"
-- "segmentedController"
-- "currentViewIsLocal"
-- "prepareForSegue"
+- "tableView"
+- "tableView"
+- "tableView"
 - "newShedsAddedRefresh"
+- "segmentedController"
+- "refresh"
+- "currentViewIsLocal"
+- "segmentedControlChanged"
+- "prepareForSegue"
 depends-top-level:
+- !private "print"
 - "UITableView"
 - "UIStoryboardSegue"
 - "CLLocationManager"
-- !private ">"
 - !private "ProfileViewController"
-- !private "dispatch_get_main_queue"
-- !private "~="
-- !private "=="
-- !private "dispatch_async"
 - !private "dispatch_group_leave"
-- "NSIndexPath"
+- !private "dispatch_async"
+- !private "dispatch_group_enter"
+- !private "~="
 - "UITableViewDataSource"
+- !private "!"
+- !private "dispatch_get_main_queue"
+- "NSIndexPath"
 - "AnyObject"
 - !private "StringLiteralType"
-- !private "NSNotificationCenter"
 - "UIViewController"
-- !private "!"
 - !private "ShedController"
-- !private "UIButton"
+- !private "=="
 - !private "LocationController"
-- !private "dispatch_group_enter"
-- !private "NSThread"
-- "UIRefreshControl"
-- "Int"
-- !private "Void"
-- !private "dispatch_group_notify"
+- !private "UIButton"
+- !private "NSNotificationCenter"
 - !private "dispatch_group_create"
+- !private "NSThread"
+- "Int"
+- "UIRefreshControl"
+- !private "Void"
 - "Bool"
-- "CLLocation"
 - !private "ShedTableViewCell"
+- "CLLocation"
+- !private "dispatch_group_notify"
 - "NSError"
 - "Shed"
 - "UITableViewDelegate"
 - "String"
-- !private "BooleanLiteralType"
-- "UITableViewCell"
 - "TinelineViewController"
+- "UITableViewCell"
+- !private ">"
 - "CLLocationManagerDelegate"
 - "UISegmentedControl"
 - !private "kCLLocationAccuracyBest"
-- !private "print"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "CLLocationManager"]
 - ["PSs9AnyObject", "LocalSheds"]
@@ -150,6 +150,7 @@ depends-member:
 - !private ["Sa", "deinit"]
 - ["Sa", "init"]
 - !private ["Sa", "sort"]
+- !private ["Sa", "sortInPlace"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
@@ -161,13 +162,16 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "sort"]
+- !private ["PSs23ArrayLiteralConvertible", "sortInPlace"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
@@ -229,6 +233,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSThread"]
 - ["PSs11CVarArgType", "Shed"]
 - !private ["PSs11CVarArgType", "ShedController"]
+- !private ["PSs11CVarArgType", "Stride"]
 - ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIRefreshControl"]
 - !private ["PSs11CVarArgType", "addObserver"]
@@ -304,9 +309,11 @@ depends-member:
 - !private ["PSs14CollectionType", "count"]
 - ["PSs14CollectionType", "init"]
 - !private ["PSs14CollectionType", "sort"]
+- !private ["PSs14CollectionType", "sortInPlace"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "Stride"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
@@ -317,6 +324,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "sort"]
+- !private ["PSs28CustomDebugStringConvertible", "sortInPlace"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "CLLocationManager"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
@@ -329,6 +337,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSThread"]
 - ["PSs23CustomStringConvertible", "Shed"]
 - !private ["PSs23CustomStringConvertible", "ShedController"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
 - ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIRefreshControl"]
@@ -395,6 +404,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "sheds"]
 - !private ["PSs23CustomStringConvertible", "sleepForTimeInterval"]
 - !private ["PSs23CustomStringConvertible", "sort"]
+- !private ["PSs23CustomStringConvertible", "sortInPlace"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "superview"]
 - ["PSs23CustomStringConvertible", "tableView"]
@@ -414,6 +424,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSThread"]
 - ["PSs9Equatable", "Shed"]
 - !private ["PSs9Equatable", "ShedController"]
+- !private ["PSs9Equatable", "Stride"]
 - ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "UIRefreshControl"]
 - !private ["PSs9Equatable", "ValueChanged"]
@@ -487,6 +498,7 @@ depends-member:
 - !private ["P4Tine12FirebaseType", "identifier"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["CSo13GFCircleQuery", "observeEventType"]
 - !private ["OSC11GFEventType", "KeyEntered"]
 - !private ["CSo7GFQuery", "observeEventType"]
@@ -502,6 +514,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSThread"]
 - ["PSs8Hashable", "Shed"]
 - !private ["PSs8Hashable", "ShedController"]
+- !private ["PSs8Hashable", "Stride"]
 - ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIRefreshControl"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -579,20 +592,26 @@ depends-member:
 - !private ["PSs9Indexable", "count"]
 - ["PSs9Indexable", "init"]
 - !private ["PSs9Indexable", "sort"]
+- !private ["PSs9Indexable", "sortInPlace"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Stride"]
 - !private ["C4Tine18LocationController", "geoFire"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
@@ -602,6 +621,7 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "count"]
 - ["PSs21MutableCollectionType", "init"]
 - !private ["PSs21MutableCollectionType", "sort"]
+- !private ["PSs21MutableCollectionType", "sortInPlace"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
@@ -612,6 +632,7 @@ depends-member:
 - !private ["PSs16MutableIndexable", "count"]
 - ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableIndexable", "sort"]
+- !private ["PSs16MutableIndexable", "sortInPlace"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
@@ -622,6 +643,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "count"]
 - ["PSs16MutableSliceable", "init"]
 - !private ["PSs16MutableSliceable", "sort"]
+- !private ["PSs16MutableSliceable", "sortInPlace"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CLLocationManager"]
 - ["PSo8NSCoding", "LocalSheds"]
@@ -913,6 +935,7 @@ depends-member:
 - !private ["C4Tine21ProfileViewController", "updateWithIdentifier"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
 - !private ["VSs5Range", "deinit"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
@@ -923,6 +946,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs30RangeReplaceableCollectionType", "sort"]
+- !private ["PSs30RangeReplaceableCollectionType", "sortInPlace"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "KeyEntered"]
 - !private ["PSs16RawRepresentable", "ValueChanged"]
@@ -937,6 +961,7 @@ depends-member:
 - !private ["PSs12SequenceType", "count"]
 - ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "sort"]
+- !private ["PSs12SequenceType", "sortInPlace"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "ValueChanged"]
 - ["C4Tine4Shed", "deinit"]
@@ -948,14 +973,17 @@ depends-member:
 - !private ["C4Tine17ShedTableViewCell", "updateWith"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "Stride"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Stride"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Stride"]
 - ["C4Tine22TinelineViewController", "AnyObject"]
 - ["C4Tine22TinelineViewController", "Bool"]
 - ["C4Tine22TinelineViewController", "CLLocation"]
@@ -1660,10 +1688,12 @@ depends-member:
 - !private ["PSs10_ArrayType", "count"]
 - ["PSs10_ArrayType", "init"]
 - !private ["PSs10_ArrayType", "sort"]
+- !private ["PSs10_ArrayType", "sortInPlace"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
@@ -1673,17 +1703,22 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "sort"]
+- !private ["PSs24_DestructorSafeContainer", "sortInPlace"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Stride"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -1692,15 +1727,18 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "sort"]
+- !private ["PSs21_ObjectiveCBridgeable", "sortInPlace"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs12_Reflectable", "Distance"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
@@ -1717,13 +1755,16 @@ depends-member:
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "selectedSegmentIndex"]
 - !private ["PSs12_Reflectable", "sort"]
+- !private ["PSs12_Reflectable", "sortInPlace"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "superview"]
 - !private ["PSs12_Reflectable", "updateWith"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "Stride"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Stride"]
 depends-nominal:
 - "PSs9AnyObject"
 - "Sa"

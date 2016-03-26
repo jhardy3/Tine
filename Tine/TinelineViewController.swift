@@ -59,6 +59,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                         self.LocalSheds.append(shed!)
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
                             if self.currentViewIsLocal {
+                                self.LocalSheds.sortInPlace { $0.0.identifier > $0.1.identifier}
                                 self.tableView.reloadData()
                             }
                         })
@@ -178,6 +179,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {
         self.tableView.reloadData()
+        self.LocalSheds.sortInPlace { $0.0.identifier > $0.1.identifier }
         
     }
     
