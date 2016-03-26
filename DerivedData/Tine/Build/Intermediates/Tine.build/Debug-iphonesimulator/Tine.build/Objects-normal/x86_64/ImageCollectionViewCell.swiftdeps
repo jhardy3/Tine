@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C4Tine23ImageCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
 - "shedImage"
+- "awakeFromNib"
 - "delegate"
 depends-top-level:
-- "Shed"
-- "ImageCollectionViewCell"
-- "UIImageView"
-- "UICollectionViewCell"
 - "ProfileViewController"
+- "UIImageView"
+- "ImageCollectionViewCell"
+- "UICollectionViewCell"
+- "Shed"
 depends-member:
 - !private ["PSs9AnyObject", "autoresizingMask"]
 - ["PSs9AnyObject", "awakeFromNib"]

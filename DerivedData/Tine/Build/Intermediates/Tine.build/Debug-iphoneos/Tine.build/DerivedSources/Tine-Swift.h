@@ -263,6 +263,8 @@ SWIFT_CLASS("_TtC4Tine17ShedTableViewCell")
 
 SWIFT_CLASS("_TtC4Tine22TinelineViewController")
 @interface TinelineViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, CLLocationManagerDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull shedIDs;
+@property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedController;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
@@ -272,6 +274,7 @@ SWIFT_CLASS("_TtC4Tine22TinelineViewController")
 - (void)refresh:(UIRefreshControl * __nonnull)refreshControl;
 - (void)newShedsAddedRefresh;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
+- (IBAction)segmentedControlChanged:(UISegmentedControl * __nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didFailWithError:(NSError * __nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

@@ -16,6 +16,19 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // Create a sheds array to hold sheds being displayed by tableview cells
     var sheds = [Shed]()
+    var LocalSheds = [Shed]()
+    var shedIDs = [String]()
+    
+    var currentViewIsLocal: Bool {
+        get {
+            switch segmentedController.selectedSegmentIndex {
+            case 0:
+                return false
+            default:
+                return true
+            }
+        }
+    }
     
     var locationManager: CLLocationManager!
     
@@ -35,29 +48,41 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.requestLocation()
+        
         if let location = locationManager.location {
             print("have location")
-            LocationController.queryAroundMe(location, completion: { (shedIDs) -> Void in
-                print("sup")
+            let circleQuery = LocationController.geoFire.queryAtLocation(location, withRadius: 80.0)
+            circleQuery.observeEventType(.KeyEntered, withBlock: { (string, location) -> Void in
+                if !self.shedIDs.contains(string) {
+                    self.shedIDs.append(string)
+                    ShedController.fetchShed(string, completion: { (shed) -> Void in
+                        self.LocalSheds.append(shed!)
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            if self.currentViewIsLocal {
+                                self.tableView.reloadData()
+                            }
+                        })
+                    })
+                }
             })
         }
         
         
         
-
+        
         
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "newShedsAddedRefresh", name: "shedAdded", object: nil)
         
         // Fetch all sheds for initial tineline preview ( eventually this will be dependent upon segmented control && refined )
-        ShedController.fetchShedsForTineline { (sheds) -> Void in
-            
-            // Call main queue to refresh view; reload tableview data accordingly
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
-                self.tableView.reloadData()
-            })
-        }
+                ShedController.fetchShedsForTineline { (sheds) -> Void in
+        
+                    // Call main queue to refresh view; reload tableview data accordingly
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
+                        self.tableView.reloadData()
+                    })
+                }
         
         
         // Adds a refreshController. Grabs new Tineline information when present
@@ -69,7 +94,12 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
         
-        cell.updateWith(sheds[indexPath.row])
+        if currentViewIsLocal {
+            cell.updateWith(LocalSheds[indexPath.row])
+        } else {
+            cell.updateWith(sheds[indexPath.row])
+        }
+        
         cell.delegate = self
         
         return cell
@@ -77,7 +107,12 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sheds.count
+        
+        if currentViewIsLocal {
+            return LocalSheds.count
+        } else {
+            return sheds.count
+        }
     }
     
     // MARK: - Data Update Functions
@@ -123,29 +158,28 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 dispatch_group_leave(group)
                 // If image problems begin occuring
-//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//                    self.tableView.reloadData()
-//                })
+                //                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                //                    self.tableView.reloadData()
+                //                })
             })
         }
-    
+        
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
             self.tableView.reloadData()
         }
         
-
+        
     }
     
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation = locations[0]
-        
-        LocationController.queryAroundMe(userLocation) { (shedIDs) -> Void in
-            print("fired")
-        }
     }
     
     
+    @IBAction func segmentedControlChanged(sender: UISegmentedControl) {
+        self.tableView.reloadData()
+        
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

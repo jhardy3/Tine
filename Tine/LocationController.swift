@@ -16,7 +16,7 @@ class LocationController {
     
     // MARK: - Location Services
     
-    static let geoFire = GeoFire(firebaseRef: FirebaseController.firebase)
+    static let geoFire = GeoFire(firebaseRef: FirebaseController.firebase.childByAppendingPath("/location/"))
     
     
     static func setLocation(shedID: String, location: CLLocation, completion: (success: Bool) -> Void) {
@@ -34,20 +34,13 @@ class LocationController {
     
     static func queryAroundMe(center: CLLocation, completion: (shedIDs: [String]) -> Void) {
         
-        
-//        setLocation("2", location: center) { (success) -> Void in
-//            if success {
-//                let circleQuery = geoFire.queryAtLocation(center, withRadius: 80.0)
-//                circleQuery.observeEventType(.KeyEntered, withBlock: { (string, location) -> Void in
-//                    print(string)
-//                })
-//            }
-//        }
-        
+        var shedIDs = [String]()
+    
+        let circleQuery = geoFire.queryAtLocation(center, withRadius: 80.0)
+        circleQuery.observeEventType(.KeyEntered, withBlock: { (string, location) -> Void in
+            shedIDs.append(string)
+        })
         
     }
-    
-    
-    // create location
     
 }

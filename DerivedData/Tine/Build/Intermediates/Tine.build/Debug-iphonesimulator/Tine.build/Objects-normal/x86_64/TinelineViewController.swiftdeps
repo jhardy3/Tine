@@ -6,54 +6,57 @@ provides-nominal:
 provides-member:
 - ["C4Tine22TinelineViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
 - "segmentedController"
+- "locationManager"
+- "locationManager"
+- "locationManager"
 - "refresh"
-- "newShedsAddedRefresh"
 - "viewDidLoad"
-- "locationManager"
-- "locationManager"
-- "locationManager"
+- "shedIDs"
+- "tableView"
+- "tableView"
+- "tableView"
+- "newShedsAddedRefresh"
 - "prepareForSegue"
 depends-top-level:
-- "UISegmentedControl"
+- !private "NSThread"
+- !private "ProfileViewController"
+- "String"
+- !private ">"
+- !private "dispatch_group_leave"
 - !private "=="
+- !private "print"
+- !private "dispatch_group_enter"
+- !private "UIButton"
+- "Int"
+- "UIStoryboardSegue"
 - "UITableViewCell"
 - !private "NSNotificationCenter"
-- !private "Void"
 - !private "kCLLocationAccuracyBest"
 - "UIViewController"
-- "CLLocationManager"
-- "UIStoryboardSegue"
-- !private "dispatch_group_leave"
 - "NSIndexPath"
-- "UIRefreshControl"
-- !private "ShedTableViewCell"
-- "Shed"
+- !private "dispatch_get_main_queue"
 - !private "StringLiteralType"
-- !private "NSThread"
-- !private "dispatch_group_enter"
-- "CLLocation"
-- "CLLocationManagerDelegate"
-- !private "UIButton"
+- !private "dispatch_async"
+- "CLLocationManager"
+- !private "dispatch_group_create"
+- !private "Void"
+- !private "ShedController"
+- "Shed"
+- !private "LocationController"
+- !private "dispatch_group_notify"
+- "UISegmentedControl"
+- "UITableViewDataSource"
+- "TinelineViewController"
+- "UIRefreshControl"
 - "UITableViewDelegate"
 - "NSError"
-- "UITableViewDataSource"
-- "AnyObject"
-- !private "dispatch_group_notify"
-- "TinelineViewController"
+- !private "ShedTableViewCell"
+- "CLLocation"
+- "CLLocationManagerDelegate"
 - "UITableView"
-- !private ">"
-- !private "dispatch_group_create"
-- !private "print"
-- !private "ShedController"
-- !private "ProfileViewController"
-- "Int"
-- !private "dispatch_async"
-- !private "LocationController"
-- !private "dispatch_get_main_queue"
+- "AnyObject"
+- !private "!"
 depends-member:
 - !private ["PSs9AnyObject", "CLLocationManager"]
 - !private ["PSs9AnyObject", "LocationController"]
@@ -61,6 +64,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSThread"]
 - ["PSs9AnyObject", "Shed"]
 - !private ["PSs9AnyObject", "ShedController"]
+- ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIRefreshControl"]
 - !private ["PSs9AnyObject", "addObserver"]
 - !private ["PSs9AnyObject", "addSubview"]
@@ -78,7 +82,9 @@ depends-member:
 - !private ["PSs9AnyObject", "dispatch_group_leave"]
 - !private ["PSs9AnyObject", "dispatch_group_notify"]
 - !private ["PSs9AnyObject", "endRefreshing"]
+- !private ["PSs9AnyObject", "fetchShed"]
 - !private ["PSs9AnyObject", "fetchShedsForTineline"]
+- !private ["PSs9AnyObject", "geoFire"]
 - !private ["PSs9AnyObject", "hunterIdentifier"]
 - !private ["PSs9AnyObject", "identifier"]
 - !private ["PSs9AnyObject", "indexPathForCell"]
@@ -92,9 +98,10 @@ depends-member:
 - ["PSs9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSs9AnyObject", "newShedsAddedRefresh"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
+- !private ["PSs9AnyObject", "observeEventType"]
 - ["PSs9AnyObject", "prepareForSegue"]
 - !private ["PSs9AnyObject", "print"]
-- !private ["PSs9AnyObject", "queryAroundMe"]
+- !private ["PSs9AnyObject", "queryAtLocation"]
 - ["PSs9AnyObject", "refresh"]
 - !private ["PSs9AnyObject", "reloadData"]
 - !private ["PSs9AnyObject", "requestAlwaysAuthorization"]
@@ -114,6 +121,7 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - ["PSs9AnyObject", "segmentedController"]
+- ["PSs9AnyObject", "shedIDs"]
 - ["PSs9AnyObject", "sheds"]
 - !private ["PSs9AnyObject", "sleepForTimeInterval"]
 - !private ["PSs9AnyObject", "superview"]
@@ -127,6 +135,8 @@ depends-member:
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "contains"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - ["Sa", "init"]
@@ -137,6 +147,8 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "ValueChanged"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "contains"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "sort"]
@@ -162,6 +174,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "NSThread"]
 - ["PSo25CLLocationManagerDelegate", "Shed"]
 - !private ["PSo25CLLocationManagerDelegate", "ShedController"]
+- ["PSo25CLLocationManagerDelegate", "String"]
 - !private ["PSo25CLLocationManagerDelegate", "UIRefreshControl"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_async"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
@@ -190,6 +203,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillBeginZooming"]
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillEndDragging"]
 - ["PSo25CLLocationManagerDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo25CLLocationManagerDelegate", "shedIDs"]
 - !private ["PSo25CLLocationManagerDelegate", "sheds"]
 - ["PSo25CLLocationManagerDelegate", "tableView"]
 - ["PSo25CLLocationManagerDelegate", "viewForZoomingInScrollView"]
@@ -202,6 +216,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSThread"]
 - ["PSs11CVarArgType", "Shed"]
 - !private ["PSs11CVarArgType", "ShedController"]
+- ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIRefreshControl"]
 - !private ["PSs11CVarArgType", "addObserver"]
 - !private ["PSs11CVarArgType", "addSubview"]
@@ -231,8 +246,10 @@ depends-member:
 - ["PSs11CVarArgType", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSs11CVarArgType", "newShedsAddedRefresh"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
+- !private ["PSs11CVarArgType", "observeEventType"]
 - ["PSs11CVarArgType", "prepareForSegue"]
 - !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "queryAtLocation"]
 - ["PSs11CVarArgType", "refresh"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "requestAlwaysAuthorization"]
@@ -252,6 +269,7 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - ["PSs11CVarArgType", "segmentedController"]
+- ["PSs11CVarArgType", "shedIDs"]
 - ["PSs11CVarArgType", "sheds"]
 - !private ["PSs11CVarArgType", "sleepForTimeInterval"]
 - !private ["PSs11CVarArgType", "superview"]
@@ -265,6 +283,8 @@ depends-member:
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
 - !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "contains"]
 - !private ["PSs14CollectionType", "count"]
 - ["PSs14CollectionType", "init"]
 - !private ["PSs14CollectionType", "sort"]
@@ -276,6 +296,8 @@ depends-member:
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "contains"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "sort"]
@@ -290,6 +312,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSThread"]
 - ["PSs23CustomStringConvertible", "Shed"]
 - !private ["PSs23CustomStringConvertible", "ShedController"]
+- ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIRefreshControl"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
@@ -297,6 +320,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addObserver"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
 - !private ["PSs23CustomStringConvertible", "addTarget"]
+- !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "contains"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "debugDescription"]
 - !private ["PSs23CustomStringConvertible", "defaultCenter"]
@@ -323,8 +348,10 @@ depends-member:
 - ["PSs23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSs23CustomStringConvertible", "newShedsAddedRefresh"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["PSs23CustomStringConvertible", "observeEventType"]
 - ["PSs23CustomStringConvertible", "prepareForSegue"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "queryAtLocation"]
 - ["PSs23CustomStringConvertible", "refresh"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "requestAlwaysAuthorization"]
@@ -344,6 +371,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - ["PSs23CustomStringConvertible", "segmentedController"]
+- ["PSs23CustomStringConvertible", "shedIDs"]
 - ["PSs23CustomStringConvertible", "sheds"]
 - !private ["PSs23CustomStringConvertible", "sleepForTimeInterval"]
 - !private ["PSs23CustomStringConvertible", "sort"]
@@ -358,11 +386,13 @@ depends-member:
 - !private ["PSs9Equatable", "CLLocationManager"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "KeyEntered"]
 - !private ["PSs9Equatable", "LocationController"]
 - !private ["PSs9Equatable", "NSNotificationCenter"]
 - !private ["PSs9Equatable", "NSThread"]
 - ["PSs9Equatable", "Shed"]
 - !private ["PSs9Equatable", "ShedController"]
+- ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "UIRefreshControl"]
 - !private ["PSs9Equatable", "ValueChanged"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -394,8 +424,10 @@ depends-member:
 - ["PSs9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSs9Equatable", "newShedsAddedRefresh"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
+- !private ["PSs9Equatable", "observeEventType"]
 - ["PSs9Equatable", "prepareForSegue"]
 - !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "queryAtLocation"]
 - ["PSs9Equatable", "refresh"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "requestAlwaysAuthorization"]
@@ -415,6 +447,7 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - ["PSs9Equatable", "segmentedController"]
+- ["PSs9Equatable", "shedIDs"]
 - ["PSs9Equatable", "sheds"]
 - !private ["PSs9Equatable", "sleepForTimeInterval"]
 - !private ["PSs9Equatable", "superview"]
@@ -429,15 +462,21 @@ depends-member:
 - !private ["P4Tine12FirebaseType", "identifier"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["CSo13GFCircleQuery", "observeEventType"]
+- !private ["OSC11GFEventType", "KeyEntered"]
+- !private ["CSo7GFQuery", "observeEventType"]
 - !private ["PSs13GeneratorType", "Element"]
+- !private ["CSo7GeoFire", "queryAtLocation"]
 - !private ["PSs8Hashable", "CLLocationManager"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "KeyEntered"]
 - !private ["PSs8Hashable", "LocationController"]
 - !private ["PSs8Hashable", "NSNotificationCenter"]
 - !private ["PSs8Hashable", "NSThread"]
 - ["PSs8Hashable", "Shed"]
 - !private ["PSs8Hashable", "ShedController"]
+- ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIRefreshControl"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addObserver"]
@@ -468,8 +507,10 @@ depends-member:
 - ["PSs8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSs8Hashable", "newShedsAddedRefresh"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
+- !private ["PSs8Hashable", "observeEventType"]
 - ["PSs8Hashable", "prepareForSegue"]
 - !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "queryAtLocation"]
 - ["PSs8Hashable", "refresh"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "requestAlwaysAuthorization"]
@@ -489,6 +530,7 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - ["PSs8Hashable", "segmentedController"]
+- ["PSs8Hashable", "shedIDs"]
 - ["PSs8Hashable", "sheds"]
 - !private ["PSs8Hashable", "sleepForTimeInterval"]
 - !private ["PSs8Hashable", "superview"]
@@ -503,6 +545,8 @@ depends-member:
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
 - !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "contains"]
 - !private ["PSs9Indexable", "count"]
 - ["PSs9Indexable", "init"]
 - !private ["PSs9Indexable", "sort"]
@@ -516,13 +560,15 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["C4Tine18LocationController", "queryAroundMe"]
+- !private ["C4Tine18LocationController", "geoFire"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "contains"]
 - !private ["PSs21MutableCollectionType", "count"]
 - ["PSs21MutableCollectionType", "init"]
 - !private ["PSs21MutableCollectionType", "sort"]
@@ -531,6 +577,8 @@ depends-member:
 - !private ["PSs16MutableIndexable", "Index"]
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "contains"]
 - !private ["PSs16MutableIndexable", "count"]
 - ["PSs16MutableIndexable", "init"]
 - !private ["PSs16MutableIndexable", "sort"]
@@ -539,6 +587,8 @@ depends-member:
 - !private ["PSs16MutableSliceable", "Index"]
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "contains"]
 - !private ["PSs16MutableSliceable", "count"]
 - ["PSs16MutableSliceable", "init"]
 - !private ["PSs16MutableSliceable", "sort"]
@@ -549,6 +599,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSThread"]
 - ["PSo8NSCoding", "Shed"]
 - !private ["PSo8NSCoding", "ShedController"]
+- ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIRefreshControl"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -591,6 +642,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - ["PSo8NSCoding", "segmentedController"]
+- ["PSo8NSCoding", "shedIDs"]
 - ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "superview"]
 - ["PSo8NSCoding", "tableView"]
@@ -608,6 +660,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSThread"]
 - ["PSo26NSExtensionRequestHandling", "Shed"]
 - !private ["PSo26NSExtensionRequestHandling", "ShedController"]
+- ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIRefreshControl"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -641,6 +694,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "segmentedController"]
+- ["PSo26NSExtensionRequestHandling", "shedIDs"]
 - ["PSo26NSExtensionRequestHandling", "sheds"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "updateWithIdentifier"]
@@ -663,6 +717,7 @@ depends-member:
 - ["CSo8NSObject", "Shed"]
 - !private ["CSo8NSObject", "ShedController"]
 - !private ["CSo8NSObject", "ShedTableViewCell"]
+- ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIRefreshControl"]
 - ["CSo8NSObject", "UISegmentedControl"]
@@ -698,8 +753,10 @@ depends-member:
 - ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo8NSObject", "newShedsAddedRefresh"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "observeEventType"]
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "queryAtLocation"]
 - ["CSo8NSObject", "refresh"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "requestAlwaysAuthorization"]
@@ -719,6 +776,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - ["CSo8NSObject", "segmentedController"]
+- ["CSo8NSObject", "shedIDs"]
 - ["CSo8NSObject", "sheds"]
 - !private ["CSo8NSObject", "sleepForTimeInterval"]
 - !private ["CSo8NSObject", "superview"]
@@ -733,6 +791,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSThread"]
 - ["PSo16NSObjectProtocol", "Shed"]
 - !private ["PSo16NSObjectProtocol", "ShedController"]
+- ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIRefreshControl"]
 - !private ["PSo16NSObjectProtocol", "addObserver"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -762,8 +821,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo16NSObjectProtocol", "newShedsAddedRefresh"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "observeEventType"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "queryAtLocation"]
 - ["PSo16NSObjectProtocol", "refresh"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
@@ -783,6 +844,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - ["PSo16NSObjectProtocol", "segmentedController"]
+- ["PSo16NSObjectProtocol", "shedIDs"]
 - ["PSo16NSObjectProtocol", "sheds"]
 - !private ["PSo16NSObjectProtocol", "sleepForTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "superview"]
@@ -806,10 +868,13 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - ["PSs30RangeReplaceableCollectionType", "init"]
 - !private ["PSs30RangeReplaceableCollectionType", "sort"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "KeyEntered"]
 - !private ["PSs16RawRepresentable", "ValueChanged"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["PSs12SequenceType", "Element"]
@@ -817,6 +882,8 @@ depends-member:
 - !private ["PSs12SequenceType", "Index"]
 - !private ["PSs12SequenceType", "SubSequence"]
 - !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "contains"]
 - !private ["PSs12SequenceType", "count"]
 - ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "sort"]
@@ -825,6 +892,7 @@ depends-member:
 - ["C4Tine4Shed", "deinit"]
 - !private ["C4Tine4Shed", "hunterIdentifier"]
 - !private ["C4Tine4Shed", "identifier"]
+- !private ["C4Tine14ShedController", "fetchShed"]
 - !private ["C4Tine14ShedController", "fetchShedsForTineline"]
 - !private ["C4Tine17ShedTableViewCell", "delegate"]
 - !private ["C4Tine17ShedTableViewCell", "updateWith"]
@@ -851,6 +919,7 @@ depends-member:
 - ["C4Tine22TinelineViewController", "Shed"]
 - !private ["C4Tine22TinelineViewController", "ShedController"]
 - !private ["C4Tine22TinelineViewController", "ShedTableViewCell"]
+- ["C4Tine22TinelineViewController", "String"]
 - !private ["C4Tine22TinelineViewController", "UIButton"]
 - ["C4Tine22TinelineViewController", "UIRefreshControl"]
 - ["C4Tine22TinelineViewController", "UISegmentedControl"]
@@ -891,6 +960,7 @@ depends-member:
 - ["C4Tine22TinelineViewController", "scrollViewWillEndDragging"]
 - ["C4Tine22TinelineViewController", "sectionIndexTitlesForTableView"]
 - ["C4Tine22TinelineViewController", "segmentedController"]
+- ["C4Tine22TinelineViewController", "shedIDs"]
 - ["C4Tine22TinelineViewController", "sheds"]
 - ["C4Tine22TinelineViewController", "tableView"]
 - ["C4Tine22TinelineViewController", "viewDidLoad"]
@@ -921,6 +991,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSThread"]
 - ["PSo21UIAppearanceContainer", "Shed"]
 - !private ["PSo21UIAppearanceContainer", "ShedController"]
+- ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIRefreshControl"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
@@ -961,6 +1032,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - ["PSo21UIAppearanceContainer", "segmentedController"]
+- ["PSo21UIAppearanceContainer", "shedIDs"]
 - ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "superview"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -979,6 +1051,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSThread"]
 - ["PSo18UIContentContainer", "Shed"]
 - !private ["PSo18UIContentContainer", "ShedController"]
+- ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIRefreshControl"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -1012,6 +1085,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "segmentedController"]
+- ["PSo18UIContentContainer", "shedIDs"]
 - ["PSo18UIContentContainer", "sheds"]
 - ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "updateWithIdentifier"]
@@ -1049,6 +1123,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSThread"]
 - ["PSo18UIFocusEnvironment", "Shed"]
 - !private ["PSo18UIFocusEnvironment", "ShedController"]
+- ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIRefreshControl"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
@@ -1089,6 +1164,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UIFocusEnvironment", "segmentedController"]
+- ["PSo18UIFocusEnvironment", "shedIDs"]
 - ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "superview"]
 - ["PSo18UIFocusEnvironment", "tableView"]
@@ -1115,6 +1191,7 @@ depends-member:
 - ["CSo11UIResponder", "Shed"]
 - !private ["CSo11UIResponder", "ShedController"]
 - !private ["CSo11UIResponder", "ShedTableViewCell"]
+- ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIRefreshControl"]
 - ["CSo11UIResponder", "UISegmentedControl"]
@@ -1161,6 +1238,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - ["CSo11UIResponder", "segmentedController"]
+- ["CSo11UIResponder", "shedIDs"]
 - ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "superview"]
 - ["CSo11UIResponder", "tableView"]
@@ -1178,6 +1256,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSThread"]
 - ["PSo20UIScrollViewDelegate", "Shed"]
 - !private ["PSo20UIScrollViewDelegate", "ShedController"]
+- ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIRefreshControl"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
@@ -1206,6 +1285,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "shedIDs"]
 - !private ["PSo20UIScrollViewDelegate", "sheds"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "updateWithIdentifier"]
@@ -1217,6 +1297,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSThread"]
 - ["PSo16UIStateRestoring", "Shed"]
 - !private ["PSo16UIStateRestoring", "ShedController"]
+- ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIRefreshControl"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1250,6 +1331,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "segmentedController"]
+- ["PSo16UIStateRestoring", "shedIDs"]
 - ["PSo16UIStateRestoring", "sheds"]
 - ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "updateWithIdentifier"]
@@ -1271,6 +1353,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSThread"]
 - ["PSo21UITableViewDataSource", "Shed"]
 - !private ["PSo21UITableViewDataSource", "ShedController"]
+- ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIRefreshControl"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
@@ -1299,6 +1382,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "shedIDs"]
 - !private ["PSo21UITableViewDataSource", "sheds"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
@@ -1309,6 +1393,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSThread"]
 - ["PSo19UITableViewDelegate", "Shed"]
 - !private ["PSo19UITableViewDelegate", "ShedController"]
+- ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIRefreshControl"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
@@ -1337,6 +1422,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "shedIDs"]
 - !private ["PSo19UITableViewDelegate", "sheds"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
@@ -1347,6 +1433,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSThread"]
 - ["PSo18UITraitEnvironment", "Shed"]
 - !private ["PSo18UITraitEnvironment", "ShedController"]
+- ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIRefreshControl"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
@@ -1387,6 +1474,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UITraitEnvironment", "segmentedController"]
+- ["PSo18UITraitEnvironment", "shedIDs"]
 - ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "superview"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -1418,6 +1506,7 @@ depends-member:
 - ["CSo16UIViewController", "Shed"]
 - !private ["CSo16UIViewController", "ShedController"]
 - !private ["CSo16UIViewController", "ShedTableViewCell"]
+- ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIRefreshControl"]
 - ["CSo16UIViewController", "UISegmentedControl"]
@@ -1458,6 +1547,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "segmentedController"]
+- ["CSo16UIViewController", "shedIDs"]
 - ["CSo16UIViewController", "sheds"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "updateWithIdentifier"]
@@ -1468,6 +1558,8 @@ depends-member:
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "contains"]
 - !private ["PSs10_ArrayType", "count"]
 - ["PSs10_ArrayType", "init"]
 - !private ["PSs10_ArrayType", "sort"]
@@ -1479,6 +1571,8 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "Index"]
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "contains"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "sort"]
@@ -1496,6 +1590,8 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "contains"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "sort"]
@@ -1513,6 +1609,8 @@ depends-member:
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addSubview"]
 - !private ["PSs12_Reflectable", "addTarget"]
+- !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "contains"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "delegate"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
@@ -1549,7 +1647,11 @@ depends-nominal:
 - !private "PSs9ErrorType"
 - !private "P4Tine12FirebaseType"
 - !private "PSs16ForwardIndexType"
+- !private "CSo13GFCircleQuery"
+- !private "OSC11GFEventType"
+- !private "CSo7GFQuery"
 - !private "PSs13GeneratorType"
+- !private "CSo7GeoFire"
 - "PSs8Hashable"
 - !private "SQ"
 - "PSs9Indexable"
@@ -1754,4 +1856,4 @@ depends-external:
 - "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito.h"
 - "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
 - "/Users/JLH/Desktop/Personal Projects/Tine/DerivedData/Tine/Build/Products/Debug-iphonesimulator/AWSCognito.framework/Modules/module.modulemap"
-interface-hash: "4dca0c3f9147640da5908945f5e6fc96"
+interface-hash: "740defb4ba2d511189060dece3901ec0"

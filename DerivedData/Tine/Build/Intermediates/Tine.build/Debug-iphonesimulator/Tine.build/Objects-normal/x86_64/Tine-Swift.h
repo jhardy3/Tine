@@ -119,6 +119,8 @@ SWIFT_CLASS("_TtC4Tine11AppDelegate")
 @class UIButton;
 @class UIImagePickerController;
 @class UITextField;
+@class NSError;
+@class CLLocation;
 @class UIImageView;
 @class NSBundle;
 @class NSCoder;
@@ -135,6 +137,8 @@ SWIFT_CLASS("_TtC4Tine20CameraViewController")
 - (void)displayCamera;
 - (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didFailWithError:(NSError * __nonnull)error;
+- (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -256,11 +260,10 @@ SWIFT_CLASS("_TtC4Tine17ShedTableViewCell")
 @end
 
 @class UIRefreshControl;
-@class CLLocation;
-@class NSError;
 
 SWIFT_CLASS("_TtC4Tine22TinelineViewController")
 @interface TinelineViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, CLLocationManagerDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull shedIDs;
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedController;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
